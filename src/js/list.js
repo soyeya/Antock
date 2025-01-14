@@ -17,7 +17,7 @@ const listDataEvet = () => {
 
      for(let i = 0; i <= listDataObj.title.length - 1; i++){
          setList += `<div class="lists">
-                      <div class="imgSpace"><img src="/src/media/list/data/${listDataObj.imgs[i]}" alt="listImg"><span>Data Accessible</span></div>
+                      <div class="imgSpace"><img src="/Antock/src/media/list/data/${listDataObj.imgs[i]}" alt="listImg"><span>Data Accessible</span></div>
                        <div class="textBoxs">
                           <h3 class="textTitles">${listDataObj.title[i]}</h3>
                            <ul class="list-cont">
@@ -28,7 +28,7 @@ const listDataEvet = () => {
                            </ul>
                        </div>
                        <div class="linkBoxs">
-                           <a href="/src/components/dashborad.html"><span></span>DASHboard</a>
+                           <a href="/Antock/src/components/dashborad.html"><span></span>DASHboard</a>
                        </div>
                   </div>`
      }
