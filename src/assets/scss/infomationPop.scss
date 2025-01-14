@@ -36,7 +36,7 @@
          top:20px;
          width: 30px;
          height: 30px;
-         background-image: url(/src/media/infomationpop/closeBtn.svg);
+         background-image: url(/Antock/src/media/infomationpop/closeBtn.svg);
          background-position: center center;
          background-repeat: no-repeat;
          background-size: 50%;
@@ -691,13 +691,13 @@
                      justify-content: space-between;
                      background-color: #383D45;
                      width: 100%;
-                     background-image: url(/src/media/infomationpop/arrowDown.svg);
+                     background-image: url(/Antock/src/media/infomationpop/arrowDown.svg);
                      background-position: right 2% center;
                      background-repeat: no-repeat;
                      background-size: 2%;
 
                      &.active{
-                        background-image: url(/src/media/infomationpop/arrowUp.svg);
+                        background-image: url(/Antock/src/media/infomationpop/arrowUp.svg);
                      }
 
 
