@@ -1,0 +1,665 @@
+#listWrappers{
+
+   width: 100vw;
+   height:100vh;
+   background-color:#0B1017;
+   margin:0 auto;
+   position: relative;
+   overflow: hidden;
+
+
+
+   .listTotalWrap{
+      width: 100%;
+      height: 100vh;
+      margin:0 auto;
+      background: url(/src/media/common/bg02.png);
+      background-position: left top;
+      background-size: cover;
+      background-repeat: no-repeat;
+      -webkit-background-position: left top;
+      -moz-background-position: left top;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -webkit-background-repeat: no-repeat;
+      -moz-background-repeat: no-repeat;
+      position: absolute;
+      overflow-y: auto;
+      
+      &::-webkit-scrollbar{ display: none;}
+      &::-moz-scrollbar{ display: none;}
+
+      section{
+
+         margin:0 auto;
+         padding:80px 86px 0px 340px;
+         width:calc(100% - 340px - 86px);
+         height: 100%;
+
+      .listTopContent{
+
+         h1{ 
+            color:$fontColor-f;
+            font-size: 50px;
+            font-family: 'Switzer-Regular';
+            padding-bottom:3%;
+
+         }
+
+         .topContent{
+
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding:18px 20px 17px;
+            display: flex;
+            align-items: center;
+            gap:20px;
+            border:1px solid rgba(112, 112, 112, 0.2);
+           
+            
+            ul{
+
+                &.categoryCont {
+
+                  display: flex;
+                  align-items: center;
+                  gap:12px;
+
+                  li{
+                     background-color: #3C4145;
+                     border-radius: 26px;
+                     padding:11px 22px;
+                     display: flex;
+                     align-items: center;
+                     gap:9px;
+                    span{
+                       color:$fontColor-f;
+                    }
+
+                    p{ color:#489CFF;}
+                  }
+                }
+               h3{
+
+                  display: flex;
+                  align-items: center;
+                  gap:8px;
+ 
+
+                  img{ height:19px; }
+                  span{
+                     color:rgba(255, 255, 255,0.4);
+                     font-size: 18px;
+                     font-family: 'Switzer-Regular';
+                     
+                  }
+               }
+            }
+
+
+         }
+      }
+
+      .listMainContent{
+
+         width: 100%;
+         margin:0 auto;
+         padding-top: 4.2%;
+         position: relative;
+
+         .listMainBtnBoxs{
+
+            width: 100%;
+            padding-bottom: 1%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            ul{
+
+               &.listBtnWrap{ 
+                  display: flex; 
+                  align-items: center;
+                  justify-content: center;
+                  gap:11px;
+               }
+
+               h3{ 
+                  color:$fontColor-f;
+                  font-size: 1vw;
+                  display: flex;
+                  align-items: center;
+                  gap:5px;
+                  text-transform: uppercase;
+               }
+
+               button{
+                  width: 40px;
+                  height: 40px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  border-radius: 6px;
+                  background-repeat: no-repeat;
+                  background-position: center center;
+                  background-size: 50%;
+                  cursor: pointer;
+                  
+                  &.listBtn01{
+                     background-image: url(/src/media/list/listbtn02.svg);
+                  }
+                  &.listBtn02{
+                     background-image: url(/src/media/list/listbtn01.svg);
+                  }
+                  &.active{ background-color: rgba(255, 255, 255, 0.16);}
+
+                  img{height:90%;}
+               }
+            }
+         }
+
+       article{
+
+            width: 100%;
+            position: absolute;
+            display: none;
+
+            &.active{ display: block;}
+
+        .listContentBoxs{
+
+               width: 100%;
+               margin:0 auto;
+               display: flex;
+               align-items: center;
+               gap:20px;
+               flex-wrap:wrap;
+               padding-bottom:10%;
+
+               .lists{
+                        width:calc(100% / 4 - 15px);
+                        border-radius: 16px;
+                        background: linear-gradient(180deg, rgba(51,73,105,0.3) 0%, rgba(59,64,74,0.3) 100%);
+                        -webkit-background: linear-gradient(180deg, rgba(51,73,105,0.3) 0%, rgba(59,64,74,0.3) 100%);
+                        -moz-background: linear-gradient(180deg, rgba(51,73,105,0.3) 0%, rgba(59,64,74,0.3) 100%);
+                        backdrop-filter: blur(30px) brightness(2.8);
+                        -webkit-backdrop-filter: blur(30px) brightness(2.8);
+                        -moz-backdrop-filter: blur(30px) brightness(2.8);                  
+
+                        .imgSpace{
+                           
+                           height:210px;
+                           display: flex;
+                           align-items: center;
+                           justify-content: center;
+                           overflow: hidden;
+                           position: relative;
+                           border-top-left-radius: 16px;
+                           border-top-right-radius: 16px;
+
+                           img{ width:100%; height:100%; object-fit: cover;}
+
+                           span{
+                              position: absolute;
+                              left:20px;
+                              top:20px;
+                              background-color: #0F64D3;
+                              border-radius: 20px;
+                              display: flex;
+                              align-items: center;
+                              justify-content: center;
+                              color:#fff;
+                              font-size: 14px;
+                              padding:11px 18px;
+
+                           }
+                           
+                        }
+
+               .textBoxs{
+
+                     padding:25px 20px 42px;
+                     margin:0 auto;
+
+                     .textTitles{
+
+                        color:$fontColor-f;
+                        font-size: 1.35vw;
+                        padding-bottom:8%;
+                        word-break: break-all;
+                     }
+                  .list-cont{
+
+                     width: 100%;
+                     margin:0 auto;
+                     display: flex;
+                     flex-direction: column;
+                     align-items: center;
+                     justify-content: flex-start;
+                     gap:18px;
+
+                     li{
+
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        &.nameBoxs {
+                           p{
+                              text-transform: uppercase;
+                           }
+                        }
+
+                        h5 { 
+                           font-family: 'Switzer-Light';
+                           color:rgba(255, 255, 255, 0.4);
+                           font-size: 1rem;
+                           
+                        }
+
+                        p{
+
+                           font-family: 'Switzer-Light';
+                           font-size: 1rem;
+                           color:rgba(255, 255, 255, 0.4);
+                           text-transform: capitalize;
+
+                           &.rankSubData{
+
+                              color:$fontColor-f;
+                              display: flex;
+                              align-items: center;
+                              justify-content: center;
+                              
+                              span{
+                                 
+                                 padding-left:9px;
+                                 margin-left: 9px;
+                                 position: relative;
+
+                                 &::before{
+                                    content: "";
+                                    position: absolute;
+                                    width: 1px;
+                                    height: 50%;
+                                    top:25%;
+                                    left:0;
+                                    background-color:  rgba(255, 255, 255, 0.4);
+                                 }
+                              }
+
+                              
+                           }
+                        }
+                     }
+                  }
+                           
+                }
+                .linkBoxs{
+               
+                  width: 80%;
+                  margin:0 auto;
+                  display: flex;
+                  align-items: center;
+                  padding:24px 0px 26px;
+                  border-top:1px solid #333A48;
+   
+                  a{
+                     display: block;
+                     width: 100%;
+                     height: 100%;
+                     font-size: 1rem;
+                     color:rgba(255, 255, 255, 0.4);
+                     display: flex;
+                     align-items: center;
+                     justify-content: center;
+                     gap:7px;
+   
+                     span{
+                        background-image: url(/src/media/list/link.svg);
+                        background-position: center center;
+                        background-size: contain;
+                        width: 13px;
+                        height: 13px;
+                     }
+                  }
+               }
+
+               }
+
+             }
+
+             .tableContentBoxs{
+      
+               width: 100%;
+               padding-bottom:10%;
+        
+               table{
+        
+                 width: 100%;
+                 margin:0 auto;
+                 background: transparent;
+                 border-collapse: separate;
+                 border-spacing: 0; /* 셀 간격을 0으로 설정 */
+        
+        
+                 thead{
+        
+                    tr{
+                    
+                       th{ 
+                          color:$fontColor-f;
+                          font-size: 0.85vw;
+                          padding:20px;
+                          text-align: center;
+                          background-color: rgba(255, 255, 255,0.1);
+                          
+                          &:first-child{ 
+                             text-align: left;
+                             border-top-left-radius: 19px;
+                             border-bottom-left-radius: 19px;
+                          }
+                          &:last-child{ 
+                             border-top-right-radius: 19px;
+                             border-bottom-right-radius: 19px;
+                          }
+                       }
+                    } 
+
+         }
+
+
+      }
+    }
+
+    
+         }
+
+         tbody{
+
+             tr{
+                 td{
+                   font-size: 0.85vw;
+                   color:#A3A5A9;
+                   padding:20px;
+                   text-align: center;
+
+                   &:first-child{ text-align: left;}
+
+                   button{
+
+                     border-radius: 26px;
+                     background-color: #0F64D3;
+                     color:$fontColor-f;
+                     font-size: 0.85vw;
+                     text-align: right;
+                     width: calc(80% - 40px);
+                     padding:9px 20px;
+                     margin:0 auto;
+                     display: flex;
+                     align-items: center;
+                     justify-content: center;
+                     background-image:url(/src/media/list/tableBtn.svg);
+                     background-position: calc(100% / 8) center;
+                     background-repeat: no-repeat;
+                     background-size: 10%;
+
+                     &.non-color{
+                        background-color: rgba(255, 255, 255,0.1);
+                        background-image:url(/src/media/list/tableBtn-non.svg);
+                        color:#46484E;
+                     
+                     }
+
+                     span{
+
+                         padding-left:20px;
+                         display: block;
+                     }
+
+                   }
+                 }
+             }
+         }
+       }
+
+       
+    }
+
+ @include breakpoint(x-large){
+
+      section {
+         .listMainContent{
+            article{
+               .listContentBoxs{
+                  .lists{
+                     .textBoxs{
+                        .list-cont{
+                           li{
+                              h5{font-size: 0.7vw;}
+                              p{ font-size: 0.7vw;}
+                           }
+                        }
+                     }
+                     .linkBoxs{
+                        a{ font-size: 0.7vw;
+                         span{ width: 10px; height: 10px;}
+                         }
+                     }
+                  } 
+               } 
+            }
+           
+         }
+      }
+    }
+
+   @media all and (max-width:1450px){
+
+      section {
+         .listMainContent{
+            .listMainBtnBoxs {
+               padding-bottom: 3%;
+               ul{
+                  h3{ font-size: 2vw;}
+               }
+            }
+            article{
+               .listContentBoxs{
+                  .lists{ 
+                     width: calc(100% / 3 - 15px);
+                     .textBoxs{
+                        .list-cont{
+                           li{
+                              h5{font-size: 1vw;}
+                              p{ font-size: 1vw;}
+                           }
+                        }
+                     }
+                     .imgSpace{
+                        span{
+                           font-size: 1.1vw;
+                           padding:8px 10px;
+                        }
+                     }
+                     .linkBoxs{
+                        a{ font-size: 1vw;
+                         span{ width: 15px; height: 15px;}
+                         }
+                     }
+                  }
+               } 
+               .tableContentBoxs{
+                  table{
+                     tbody{
+                        tr{
+                           td{
+                              button{
+                                 width: calc(100% - 20px);
+                                 padding:9px 10px;
+                              }
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+         
+         }
+      }
+   }
+
+   @include breakpoint(large){
+      section {
+         padding: 80px 86px 0px 240px;
+         width: calc(100% - 240px - 86px);
+         .listTopContent{
+            .topContent{
+               ul{
+                  &.categoryCont{
+                     li{
+                        padding: 8px 18px;
+                        span{ font-size: 1vw;}
+                        p{font-size: 1vw;}
+                     }
+                  }
+                  h3{
+                     span{
+                        font-size: 1.4vw;
+                     }
+                  }
+               }
+            }
+         }
+         .listMainContent{
+            article{
+               .listContentBoxs{
+                  .lists{ 
+                     width: calc(100% / 2 - 10px);
+                     .textBoxs{
+                        .textTitles{ font-size: 2vw;}
+                        .list-cont{
+                           li{
+                              h5{font-size: 1.3vw;}
+                              p{ font-size: 1.3vw;}
+                           }
+                        }
+                     }
+                     .linkBoxs{
+                        a{ font-size: 1.3vw;
+                         span{ width: 15px; height: 15px;}
+                         }
+                     }
+                  }
+               } 
+            }
+
+         }
+      }
+   }
+
+
+   @include breakpoint(medium){
+      section {
+         padding: 80px 50px 0px 230px;
+         width: calc(100% - 230px - 50px);
+         .listTopContent{
+            h1{ 
+               font-size: 4vw;
+               padding-bottom: 2%;
+            }
+            .topContent{
+               padding: 15px 10px 17px;
+               gap: 10px;
+               ul{
+                  &.categoryCont{
+                     li{ padding:8px 12px;}
+                  }
+                  h3{
+                     span{
+                        font-size: 1.3vw;
+                     }
+                     img{height:15px;}
+                  }
+               }
+            }
+         }
+
+         .listMainContent {
+            .listMainBtnBoxs{
+               ul{
+                  &.listBtnWrap{
+                     gap:5px;
+                  }
+                  button{ width: 30px; height: 30px;}
+               }
+            }
+            article{
+               .tableContentBoxs{
+                  table{
+                     thead{
+                        tr{
+                           th{
+                              font-size: 1vw;
+                              padding: 10px;
+                              &:first-child{
+                                 border-top-left-radius: 10px;
+                                 border-bottom-left-radius: 10px;
+                              }
+                              &:last-child{
+                                 border-top-right-radius: 10px;
+                                 border-bottom-right-radius: 10px;
+                              }
+                           }
+                        }
+                     }
+                     tbody{
+                        tr{
+                           td{ font-size: 1vw;
+                              padding:15px 10px;
+                              button{
+                                 span{ padding-left: 1.5vw;}
+                              }
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+
+   @media all and (max-width:900px){
+      section {
+         .listMainContent {
+            article{
+               .tableContentBoxs{
+                  table{
+                     tbody{
+                        tr{
+                           td{ font-size: 1vw;
+                              padding:10px 5px;
+                              button{
+                                 padding:5px 10px;
+                              }
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+   @include breakpoint(small){
+      section {
+         padding: 80px 50px 0px 200px;
+         width: calc(100% - 200px - 50px);
+      }
+   }
+   
+   }
+
+}

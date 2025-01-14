@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="81.954" height="18.002" viewBox="0 0 81.954 18.002">
+  <defs>
+    <linearGradient id="linear-gradient" x1="1.174" x2="-0.141" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#489cff"/>
+      <stop offset="1" stop-color="#91c4ff"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="-0.023" y1="1" x2="1.032" y2="0" xlink:href="#linear-gradient"/>
+  </defs>
+  <g id="그룹_25774" data-name="그룹 25774" transform="translate(-1012.042 -1009)">
+    <path id="합치기_3" data-name="합치기 3" d="M11500,18883a9,9,0,1,1,9,9A9,9,0,0,1,11500,18883Zm.783,0a8.217,8.217,0,1,0,8.217-8.215A8.227,8.227,0,0,0,11500.779,18883Zm6,3.23,3.561-3.23-3.561-3.229.525-.578,4.2,3.807-.324.293-3.877,3.521Z" transform="translate(-10424 -17865)" fill="url(#linear-gradient)"/>
+    <path id="패스_864753" data-name="패스 864753" d="M-51.96-14.28V0h2.94V-9.56h.04L-43.04,0h3.14V-14.28h-2.94V-4.7h-.04l-5.96-9.58Zm14.82,0V0H-26.3V-2.64H-34v-3.5h6.92V-8.58H-34v-3.06h7.54v-2.64Zm16.46,6.8L-25.66,0h3.52l3.18-4.94L-15.84,0h3.74l-4.98-7.46,4.58-6.82h-3.44l-2.9,4.56-2.8-4.56h-3.64Zm13-4.16V0h3.14V-11.64H-.26v-2.64h-11.7v2.64Z" transform="translate(1064.002 1025)" fill="url(#linear-gradient-2)"/>
+  </g>
+</svg>

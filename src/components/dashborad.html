@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/assets/css/style.css">
+    <!-- chart.js-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.3.0/chart.umd.min.js"></script>
+    <title>antock</title>
+</head>
+<body>
+    <div id="dashboardWrappers">
+        <div class="headerWrappers"></div>
+        <div class="dashContentWrap">
+            <section>
+                <article class="dashSpace01">
+                   <div class="resultTopContent">
+                       <a href="/src/components/list.html"><span></span>Go to result</a>
+                   </div>
+                   <div class="resultTopMain">
+                     <ul class="logoContents"><li><img src="/src/media/dashboard/logo.svg" alt="logo" loading="lazy"></li></ul>
+                     <ul class="scoreBoxs">
+                        <li> 
+                            <h3>Model score</h3>
+                            <div class="boxs boxs01">
+                                <p>97.3</p>
+                                <span>Top 2.7%</span>
+                           </div>
+                        </li>
+                        <li> 
+                            <h3>Period</h3>
+                            <div class="boxs boxs02">
+                                <p>8.7</p>
+                                <span>years</span>
+                           </div>
+                        </li>
+                     </ul>
+                     <ul class="moreViews">
+                         <li><img src="/src/media/dashboard/dashImg01.png" alt="img" loading="lazy"></li>
+                         <li><p>Benchmark companies representthe highest standards of practice and performance within their industry</p></li>
+                         <li><button type="button" class="viewPopOpenBtn">View Report</button></li>
+                     </ul>
+                     <ul class="DetailScores">
+                        <h5>Detail Score</h5>
+                        <div class="dataChartBoxs">
+                            <div class="canvasBoxs">
+                                <div class="titleBoxs"><h3>Operating income</h3><p><span>-230</span>Milion</p></div>
+                                <canvas id="detailCanvas01"></canvas>
+                            </div>
+                            <div class="canvasBoxs">
+                                <div class="titleBoxs"><h3>Employee</h3><p><span>400</span>Person</p></div>
+                                <canvas id="detailCanvas02"></canvas>
+                            </div>
+                            <div class="canvasBoxs">
+                                <div class="titleBoxs"><h3>Total revenue</h3><p><span>3</span>Bilion</p></div>
+                                <canvas id="detailCanvas03"></canvas>
+                            </div>
+                            <div class="canvasBoxs">
+                                <div class="titleBoxs"><h3>Investment</h3><p><span>500</span>Milion</p></div>
+                                <canvas id="detailCanvas04"></canvas>
+                            </div>
+                            <div class="canvasBoxs">
+                                <div class="titleBoxs"><h3>Operating income</h3><p><span>30</span>Bilion</p></div>
+                                <canvas id="detailCanvas05"></canvas>
+                            </div>
+                            <div class="canvasBoxs">
+                                <div class="titleBoxs"><h3>Investment</h3><p><span>57</span>Milion</p></div>
+                                <canvas id="detailCanvas06"></canvas>
+                            </div>
+                        </div>
+                     </ul>
+                   </div>
+                </article>
+                <article class="dashSpace02">
+                     <h3>Main factors</h3>
+                     <div class="data-boxs">
+                         <div class="dataCanvasBoxs">
+                             <canvas id="dashChartBar02"></canvas>
+                         </div>
+                         <div class="button-container">
+                            <button class="radar-button">F1 <p>Readiness</p></button>
+                            <button class="radar-button">F2 <p>Readiness</p></button>
+                            <button class="radar-button">F3 <p>Readiness</p></button>
+                            <button class="radar-button">F4 <p>Readiness</p></button>
+                            <button class="radar-button">F5 <p>Readiness</p></button>
+                            <button class="radar-button">F6 <p>Readiness</p></button>
+                            <button class="radar-button">F7 <p>Readiness</p></button>
+                            <button class="radar-button">F8 <p>Readiness</p></button>
+                     </div>
+                    </div>
+                    <div class="labelsBoxs">
+                        <ul class="labelLists">
+                           <li><i class="blue"></i><p>Readiness</p></li>
+                           <li><i class="sky"></i><p>Benchmark</p></li>
+                           <li><i class="green"></i><p>Industry Average</p></li>
+                        </ul>
+                    </div>
+                    <div class="growthDriverDatas">
+                        <h5>Growth Driver Weights</h5>
+                       <ul class="dataBars bars">
+                         <canvas id="dataBar01" width="100"></canvas>
+                       </ul>
+                       <ul class="dataBars lists">
+                          <li><i class="dataBar01"></i><p>Readiness</p></li>
+                          <li><i class="dataBar02"></i><p>New business</p></li>
+                          <li><i class="dataBar03"></i><p>Partnerships</p></li>
+                          <li><i class="dataBar04"></i><p>Profitability</p></li>
+                          <li><i class="dataBar05"></i><p>Branding</p></li>
+                          <li><i class="dataBar06"></i><p>Efficiency</p></li>
+                          <li><i class="dataBar07"></i><p>Sales</p></li>
+                          <li><i class="dataBar08"></i><p>Accelerate</p></li>
+                       </ul>
+                    </div>
+                </article>
+                <article class="dashSpace03">
+                    <div class="openDataBox01 openDataBoxies">
+                        <div class="contentTop">
+                           <h5><span>F1</span>Readiness</h5>
+                           <p>It is a measure of how well prepared a company is for technological growth, and the level of achievement in the area is judged through indicators related to patent registration and establishment of research institutes, etc.</p>
+                        </div> 
+                        <div class="contentMain">
+                          <div class="tableBox">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Growth DNA</th>
+                                        <th>Value</th>
+                                        <th>Score</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="addMoreInfoBody">
+                                    <tr>
+                                        <td><p>months</p><span>Initial Main Bizcertification time </span></td>
+                                        <td>8.8</td>
+                                        <td><div class="lineBars"><em></em></div><span class="data">92.1</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><p>months</p><span>Initial Main Bizcertification time </span></td>
+                                        <td>8.8</td>
+                                        <td><div class="lineBars"><em></em></div><span class="data">92.1</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><p>months</p><span>Initial Main Bizcertification time </span></td>
+                                        <td>8.8</td>
+                                        <td><div class="lineBars"><em></em></div><span class="data">92.1</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><p>months</p><span>Initial Main Bizcertification time </span></td>
+                                        <td>8.8</td>
+                                        <td><div class="lineBars"><em></em></div><span class="data">92.1</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><p>months</p><span>Initial Main Bizcertification time </span></td>
+                                        <td>8.8</td>
+                                        <td><div class="lineBars"><em></em></div><span class="data">92.1</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><p>months</p><span>Initial Main Bizcertification time </span></td>
+                                        <td>8.8</td>
+                                        <td><div class="lineBars"><em></em></div><span class="data">92.1</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><p>months</p><span>Initial Main Bizcertification time </span></td>
+                                        <td>8.8</td>
+                                        <td><div class="lineBars"><em></em></div><span class="data">92.1</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><p>months</p><span>Initial Main Bizcertification time </span></td>
+                                        <td>8.8</td>
+                                        <td><div class="lineBars"><em></em></div><span class="data">92.1</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><p>months</p><span>Initial Main Bizcertification time </span></td>
+                                        <td>8.8</td>
+                                        <td><div class="lineBars"><em></em></div><span class="data">92.1</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><p>months</p><span>Initial Main Bizcertification time </span></td>
+                                        <td>8.8</td>
+                                        <td><div class="lineBars"><em></em></div><span class="data">92.1</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><p>months</p><span>Initial Main Bizcertification time </span></td>
+                                        <td>8.8</td>
+                                        <td><div class="lineBars"><em></em></div><span class="data">92.1</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                          </div>
+                          <div class="scoreBoxies">
+                            <button type="button">
+                                <ul>
+                                    <li><span>Average score</span></li>
+                                    <li><div class="lineBars btnLineBars"><em></em></div><span class="data btnData">92.1</span></li>
+                                </ul>
+                            </button>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="openDataBox02 openDataBoxies">
+                         <div class="openDataBoxTop">
+                             <ul>
+                                <button type="button" class="backPage"></button>
+                             </ul>
+                             <ul>
+                                <h5>Performance Indicator</h5>
+                                <p>Initial Main Bizcertification time </p>
+                             </ul>
+                         </div>
+                        <div class="openDataBoxContent">
+                            <div class="dataLabelboxs">
+                                <ul>
+                                    <li><i class="blue"></i><p>Selected</p></li>
+                                    <li><i class="sky"></i><p>Benchmark</p></li>
+                                    <li><i class="green"></i><p>Industry Average</p></li>
+                                </ul>
+                            </div>
+                            <div class="dataInsert">
+                                <div class="selectInsert">
+                                    <div class="selectInsertSelectBoxs">
+                                        <select
+                                        name=""
+                                        class="selectInsertHiddenSelect"
+                                        id="selectInsertHiddenSelectBox01"
+                                        hidden>
+                                      </select>
+                                         <!--보여지는 셀렉박스-->
+                                        <div class="selectInsertSelects">
+                                        <button class="selectInsertSelectsTitleBtn">Patent App</button>
+                                        <div class="selectInsertSelectList">
+                                            <ul class="selectInsertSelectListMember">
+                                                <li><p>Patent App1</p></li>
+                                                <li><p>Patent App2</p></li>
+                                                <li><p>Patent App3</p></li>
+                                                <li><p>Patent App4</p></li>
+                                                <li><p>Patent App5</p></li>
+                                            </ul>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="canvasCont">
+                                    <canvas id="dashChart01"></canvas>
+                                </div>
+                                <div class="buttonInsert">
+                                    <button type="button"><span></span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </div>
+        <div id="viewReportPopWrap"></div>
+    </div>
+    <script type="module" src="/index.js"></script>
+    <script src="/src/js/dashChart.js"></script>
+    <script src="/src/js/dashboard.js"></script>
+</body>
+</html>

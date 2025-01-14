@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/assets/css/style.css">
+      <!-- Link Swiper's CSS -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <!-- chart.js-->
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.3.0/chart.umd.min.js"></script>
+    <title>antock</title>
+</head>
+<body>
+<div id="recommenWrappers">
+ <div class="headerWrappers"></div>
+   <div class="recommenTotalWrap">
+    <section class="recommenInfo">
+     <article class="recommenInfoCont01">
+        <div id="recommendLinks01" class="dataBoxs">
+            <h3>VICTORY ROAD</h3>
+            <div class="info-contents">
+                <div class="infoContList addBackGround">
+                    <h5><span>Readiness</span>Certification date of venture/lab</h5>
+                    <p>Comparing the time taken from the establishment to the initial acquisition of venture company certification and research institute certification on a yearly basis.</p>
+                </div>
+                <div class="infoContList">
+                    <div class="pointBoxs">
+                         <ul>
+                            <li><i></i><p>Benchmark</p></li>
+                            <li><i></i><p>Selected</p></li>
+                        </ul>
+                    </div>
+                    <div class="dataList">
+                        <ul class="datas">
+                           <li><h5 class="data-title">Time required to obtain venture certification (month)</h5></li>
+                           <li>
+                              <div class="dataChart">
+                                 <canvas id="recommendData01" style="background-image: url(/src/media/recommendation/canvas01.png);"></canvas>
+                              </div>
+                           </li>
+                           <li class="data-info">
+                            <p class="dataState state01"><span class="goodIcon"></span>Good</p>
+                            <p>The company achieved certification approximately 2 to 3 years  ahead of the benchmark average, underscoring a strong commitment to proactive technology development.</p>
+                           </li>
+                        </ul>
+                        <ul class="datas">
+                          <li><h5 class="data-title">Time required to obtain venture certification (month)</h5></li>
+                          <li>
+                             <div class="dataChart">
+                              <canvas id="recommendData02"  style="background-image: url(/src/media/recommendation/canvas02.png);"></canvas>
+                             </div>
+                          </li>
+                          <li class="data-info">
+                             <p class="dataState state02"><span class="badIcon"></span>Bad</p>
+                             <p>The company achieved certification approximately 2 to 3 years  ahead of the benchmark average, underscoring a strong commitment to proactive technology development.</p>
+                          </li>
+                       </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+      <!--Patent applications영역-->
+        <div id="recommendLinks02" class="dataBoxs">
+          <div class="info-contents">
+              <div class="infoContList addBackGround">
+                  <h5><span>Readiness</span>Patent applications</h5>
+                  <p>This is the number of patent applications from the establishment to the present.</p>
+              </div>
+              <div class="infoContList">
+                  <div class="pointBoxs">
+                       <ul>
+                          <li><i></i><p>Benchmark</p></li>
+                          <li><i></i><p>Selected</p></li>
+                      </ul>
+                  </div>
+                  <div class="dataList">
+                      <ul class="datas datas02">
+                         <li>
+                            <div class="dataChart">
+                               <canvas id="recommendData03"></canvas>
+                            </div>
+                         </li>
+                         <li class="data-info">
+                          <p class="dataState state01"><span class="goodIcon"></span>Good</p>
+                          <p>he company demonstrates metrics comparable to, and at times exceeding, the benchmark average</p>
+                         </li>
+                         <li class="data-info">
+                          <p class="dataState state02"><span class="badIcon"></span>Bad</p>
+                          <p>There is no content.</p>
+                         </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+        <!--Employment & wage 영역-->
+        <div id="recommendLinks03" class="dataBoxs">
+          <div class="info-contents">
+              <div class="infoContList addBackGround">
+                  <h5><span>Appearance</span>Employment & wage</h5>
+                  <p>This is the number of patent applications from the establishment to the present.</p>
+              </div>
+              <div class="infoContList">
+                  <div class="pointBoxs">
+                        <ul>
+                          <li><i></i><p>Benchmark</p></li>
+                          <li><i></i><p>Selected</p></li>
+                      </ul>
+                  </div>
+                  <div class="dataList">
+                      <ul class="datas datas02">
+                          <li>
+                            <div class="dataChart">
+                                <canvas id="recommendData04"></canvas>
+                            </div>
+                          </li>
+                          <li class="data-info">
+                          <p class="dataState state01"><span class="goodIcon"></span>Good</p>
+                          <p>Both employment and wages are on an upward trend, reflecting consistent growth.</p>
+                          </li>
+                          <li class="data-info">
+                          <p class="dataState state02"><span class="badIcon"></span>Bad</p>
+                          <p>Compared to successful companies, the absolute scale and growth rate are somewhat lower across all periods</p>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+        <!-- Revenue 영역-->
+        <div id="recommendLinks04" class="dataBoxs">
+          <div class="info-contents">
+              <div class="infoContList addBackGround">
+                  <h5><span>Appearance</span>Revenue</h5>
+                  <p>This is the number of patent applications from the establishment to the present.</p>
+              </div>
+              <div class="infoContList">
+                  <div class="pointBoxs">
+                        <ul>
+                          <li><i></i><p>Benchmark</p></li>
+                          <li><i></i><p>Selected</p></li>
+                      </ul>
+                  </div>
+                  <div class="dataList">
+                      <ul class="datas datas03">
+                          <li class="datas-chartWrap">
+                            <div class="dataChart">
+                                <canvas id="recommendData05" style="background-image: url(/src/media/recommendation/canvas03.png);"></canvas>
+                            </div>
+                          </li>
+                          <div class="dataInfo-wrap">
+                          <li class="data-info">
+                          <p class="dataState state01"><span class="goodIcon"></span>Good</p>
+                          <p>Since establishment, the company has shown steady revenue growth through year 8, indicating positive momentum</p>
+                          </li>
+                          <li class="data-info">
+                          <p class="dataState state02"><span class="badIcon"></span>Bad</p>
+                          <p>However, the absolute scale remains smaller compared to benchmark companies, with a slight decline observed in the 9th year compared to the previous year.</p>
+                          </li>
+                        </div>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+        <!-- Net income 영역-->
+        <div id="recommendLinks05" class="dataBoxs">
+          <div class="info-contents">
+              <div class="infoContList addBackGround">
+                  <h5><span>Appearance</span>Net income</h5>
+                  <p>This is is the annual net income from its establishment to the present.</p>
+              </div>
+              <div class="infoContList">
+                  <div class="pointBoxs">
+                        <ul>
+                          <li><i></i><p>Benchmark</p></li>
+                          <li><i></i><p>Selected</p></li>
+                      </ul>
+                  </div>
+                  <div class="dataList">
+                      <ul class="datas datas03">
+                          <li class="datas-chartWrap">
+                            <div class="dataChart">
+                                <canvas id="recommendData06"></canvas>
+                            </div>
+                          </li>
+                          <div class="dataInfo-wrap">
+                          <li class="data-info">
+                          <p class="dataState state01"><span class="goodIcon"></span>Good</p>
+                          <p>During years 5 to 7, it temporarily shifted to profitability, generating positive earnings.</p>
+                          </li>
+                          <li class="data-info">
+                          <p class="dataState state02"><span class="badIcon"></span>Bad</p>
+                          <p>However, compared to benchmark companies, the profitability period is relatively shorter, with a decline observed more recently in years 8 to 9.</p>
+                          </li>
+                        </div>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+    <!-- Articles on overseas expansion 영역-->
+    <div id="recommendLinks06" class="dataBoxs">
+      <div class="info-contents">
+          <div class="infoContList addBackGround">
+              <h5><span>Appearance</span>Articles on overseas expansion</h5>
+              <p>This is the number of articles related to overseas expansion from the establishment to the present.</p>
+          </div>
+          <div class="infoContList">
+              <div class="pointBoxs">
+                    <ul>
+                      <li><i></i><p>Benchmark</p></li>
+                      <li><i></i><p>Selected</p></li>
+                  </ul>
+              </div>
+              <div class="dataList">
+                  <ul class="datas datas03">
+                      <li class="datas-chartWrap">
+                        <div class="dataChart">
+                            <canvas id="recommendData07"></canvas>
+                        </div>
+                      </li>
+                      <div class="dataInfo-wrap">
+                      <li class="data-info">
+                      <p class="dataState state01"><span class="goodIcon"></span>Good</p>
+                      <p>The company achieved certification approximately 2 to 3 years ahead of the benchmark average, underscoring a strong commitment to proactive technology development.</p>
+                      </li>
+                      <li class="data-info">
+                      <p class="dataState state02"><span class="badIcon"></span>Bad</p>
+                      <p>The company achieved certification approximately 2 to 3 years  ahead of the benchmark average, underscoring a strong commitment to proactive technology development.</p>
+                      </li>
+                    </div>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+   </article>
+     <article class="recommenInfoCont02"></article>
+     <!--오른쪽 고정메뉴-->
+     <div class="fixedSwiperWapper">
+        <div class="fixedSwiperCont swiperWrapCont01">
+           <h3>IBK SOLUTION</h3>
+           <div class="swiperInfoContents">
+              <div class="infoBoxs">
+                <ul class="boxs01">
+                    <li><img src="/src/media/recommendation/solution.png" alt="solution" loading="lazy"></li>
+                    <li><p>Hello! This is KES<br/>In-depth solutions are available<br/>for the following:</p></li>
+                   </ul>
+                  <ul class="boxs02">
+                     <li><i></i><p>Readiness</p></li>
+                     <li><i></i><p>Appearance</p></li>
+                     <li><i></i><p>Overseas</p></li>
+                   </ul>
+              </div>
+              <div class="infoBoxs">
+                <ul>
+                    <li><p>Click the button below to find out<br/>More about the solutions.</p></li>
+                    <li><button type="button" class="checkOutBtn">Check out</button></li>
+                </ul>
+              </div>
+           </div>
+        </div>
+        <div class="fixedSwiperCont swiperWrapCont02">
+            <h3>IBK SOLUTION</h3>
+            <div class="swiperInfoContents">
+               <div class="swiperMainInfo">
+                  <div class="mainInfo01 mainInfos">
+                    <ul class="swiperTopCont">
+                        <li><img src="/src/media/recommendation/solution.png" alt="solution" loading="lazy"></li>
+                        <li><button type="button" class="recommendBtn">Recommend</button></li>
+                     </ul>
+                      <!-- Swiper -->
+                    <div class="swiper recommonSwiper">
+                        <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                             <ul>
+                                <li><p>Selected companies obtained </p>
+                                    <p><a href="#recommendLinks01">venture company</a>
+                                     <a href="#recommendLinks01">certification and lab certification</a> relatively early since their establishment.</p>
+                                </li>
+                                <li>
+                                    <p><a href="#recommendLinks02">Patents</a>are also actively carrying out</p>
+                                    <p>technology development, showing a steady upward trend to a level similar to that of benchmarking companies until now, the ninth year of its establishment.</p>
+                                    <p>This is supported by the fact that he has a history of winning awards that can show the company's influence and superiority in the industrial sector, such as the Korea Industrial Awards and the Technology Innovation Awards.</p>
+                                </li>
+                             </ul>
+                        </div>
+                        <div class="swiper-slide">
+                            <ul>
+                                <li><p>However, this has weakened some financial indicators by failing to take profitability. </p>
+                                </li>
+                                <li>
+                                    <p>First of all, in terms of <a href="#recommendLinks04">revenue</a></p>
+                                    <p>it is rising to a lower level than benchmarking, but it is showing a slight decline compared to the previous year</p>
+                                </li>
+                                <li><a href="#recommendLinks05">Net income</a><p>for the year, a major revenue indicator, is also noteworthy, similar to successful companies, but basically tends to be in the red. Therefore, unless you raise separate external funds, it will be difficult to supply and demand resources to invest in R&D.</p></li>
+                             </ul>
+                        </div>
+                        <div class="swiper-slide">
+                            <ul>
+                                <li><a href="#recommendLinks05">Net income</a>
+                                    <p>for the year, a major revenue indicator, is also noteworthy, similar to successful companies, but basically tends to be in the red. Therefore, unless you raise separate external funds, it will be difficult to supply and demand resources to invest in R&D.</p>
+                                </li>
+                                <li>
+                                    <p>Given this, the profitability is weak compared to the current high level of technology development, so it seems necessary to establish a stable profit model for the company’s future business activities.</p>
+                                </li>
+                                <li><p>The company seems to have conducted various overseas expansion activities to find a </p></li>
+                            </ul>
+                        </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"><img src="/src/media/recommendation/nextBtn.svg" alt="next"></div>
+                        <div class="swiper-button-prev"><img src="/src/media/recommendation/prevBtn.svg" alt="prev"></div>
+                    </div><!--swiper-->
+                  </div><!--mainInfo01-->
+                  <div class="mainInfo02 mainInfos">
+                     <div class="mainInfoRecommendCont">
+                          <div class="mainInfoRecomTop">
+                             <img src="/src/media/recommendation/solution.png" alt="solution" loading="lazy">
+                             <button type="button" class="mainInfoRecomBack">Back</button>
+                             <h5>Recommend</h5>
+                             <h2>Therefore, KES recommends these products.</h2>
+                          </div>
+                          <div class="mainInfoRecomContents">
+                            <ul>
+                                <li><h3>IP commercialization loans</h3></li>
+                                <li><p>By providing funds with IP (patent rights registered with the Korean Intellectual Property Office) as collateral to companies with weak collateral, it gives momentum to future business development to prevent restrictions on profit generation.</p></li>
+                                <button type="button" class="moreInfoPop"><img src="/src/media/recommendation/arroPop.svg" alt="arrowPop" loading="lazy"></button>
+                            </ul>
+                            <ul>
+                                <li><h3>KITA Trade Promotion Fund Loan</h3></li>
+                                <li><p>We will support export marketing funding to facilitate business activities for export such as overseas promotion and market research so that there are no restrictions on overseas expansion activities.</p></li>
+                                <button type="button" class="moreInfoPop"><img src="/src/media/recommendation/arroPop.svg" alt="arrowPop" loading="lazy"></button>
+                            </ul>
+                          </div>
+                     </div>
+                  </div><!--mainInfo02-->
+               </div>
+            </div>
+        </div><!--swiperWrapCont02-->
+     </div>
+    </section>
+    <!--Product recommendation 영역-->
+    <div id="recommendationsPopWrappers">
+       <div class="recommendationPopCont">
+        <div class="recommendationPopBoxs">
+          <div class="titleBoxies">
+             <h3 class="bigTitles">Product recommendations</h3>
+             <div class="titlesInfos">
+              <h5 class="subTitles">IP Commercialization Loan</h5>
+              <p>A loan product that provides funding to companies with technological capabilities but limited collateral, based on intellectual property (hereinafter referred to as “IP”) as defined by the new financial market standards.</p>
+            </div>
+          </div>
+          <div class="recommendationContents">
+            <div class="buttonBoxies">
+               <button type="button">Summary</button>
+               <button type="button">Product info</button>
+               <button type="button">Benefits</button>
+            </div>
+            <div class="contentList">
+              <ul>
+                 <li><h5>Project Overview1</h5></li>
+                 <li class=textWidth><p>This loan is designed to support companies with limited collateral but strong technological capabilities by offering funding secured by Intellectual Property (IP), specifically patent rights registered with the Patent Office.</p></li>
+              </ul>
+              <ul class="addGap">
+                 <li><h5>Eligibility Criteria</h5></li>
+                 <li><p>- Not classified as an Early Warning company (Pre-Caution, Caution, or Alert status)</p></li>
+                 <li><p>- Debt ratio under 400%</p></li>
+                 <li><p>- No deficits recorded in the last two fiscal years</p></li>
+                 <li><p>- Total assets of 500 million KRW or more</p></li>
+                 <li><p>- A-rated with T4 or higher, or BBB+ rated with T3 or higher and a Big Data rating of 4 or above</p></li>
+              </ul>
+            </div>
+            <div class="contentList">
+              <ul>
+                 <li><h5>Project Overview2</h5></li>
+                 <li class=textWidth><p>This loan is designed to support companies with limited collateral but strong technological capabilities by offering funding secured by Intellectual Property (IP), specifically patent rights registered with the Patent Office.</p></li>
+              </ul>
+              <ul class="addGap">
+                 <li><h5>Eligibility Criteria</h5></li>
+                 <li><p>- Not classified as an Early Warning company (Pre-Caution, Caution, or Alert status)</p></li>
+                 <li><p>- Debt ratio under 400%</p></li>
+                 <li><p>- No deficits recorded in the last two fiscal years</p></li>
+                 <li><p>- Total assets of 500 million KRW or more</p></li>
+                 <li><p>- A-rated with T4 or higher, or BBB+ rated with T3 or higher and a Big Data rating of 4 or above</p></li>
+              </ul>
+            </div>
+            <div class="contentList">
+              <ul>
+                 <li><h5>Project Overview3</h5></li>
+                 <li class=textWidth><p>This loan is designed to support companies with limited collateral but strong technological capabilities by offering funding secured by Intellectual Property (IP), specifically patent rights registered with the Patent Office.</p></li>
+              </ul>
+              <ul class="addGap">
+                 <li><h5>Eligibility Criteria</h5></li>
+                 <li><p>- Not classified as an Early Warning company (Pre-Caution, Caution, or Alert status)</p></li>
+                 <li><p>- Debt ratio under 400%</p></li>
+                 <li><p>- No deficits recorded in the last two fiscal years</p></li>
+                 <li><p>- Total assets of 500 million KRW or more</p></li>
+                 <li><p>- A-rated with T4 or higher, or BBB+ rated with T3 or higher and a Big Data rating of 4 or above</p></li>
+              </ul>
+            </div>
+          </div>
+          <div class="listBeforeBtnBoxs">
+            <button type="button" id="preListBtn"></button>
+         </div>
+        </div>
+       </div>
+    </div><!--recommendationsPopWrappers-->
+
+
+  </div>
+</div>
+<script type="module" src="/index.js"></script>
+<script src="/src/js/recommendation.js"></script>
+<script src="/src/js/recomChart.js"></script>
+<script src="/src/js/recommenPop.js"></script>
+
+ <!-- Initialize Swiper -->
+ <script>
+    const recommonSwiperCont = new Swiper(".recommonSwiper", {
+      spaceBetween: 30,
+      slidesPerView: 1,
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</body>
+</html>

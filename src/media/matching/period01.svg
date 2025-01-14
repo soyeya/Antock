@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="332.5" height="209.831" viewBox="0 0 332.5 209.831">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.306" x2="0.567" y2="1.113" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#467fff"/>
+      <stop offset="1" stop-color="#0f1724"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#0f1724"/>
+      <stop offset="0.379" stop-color="#224b7e"/>
+      <stop offset="0.842" stop-color="#489cff"/>
+      <stop offset="1" stop-color="#0f1724"/>
+    </linearGradient>
+    <filter id="타원_137" x="60.856" y="101.831" width="76" height="76" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feFlood flood-color="#00123c" flood-opacity="0.502"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="그룹_25790" data-name="그룹 25790" transform="translate(0 80.509)">
+    <path id="패스_864761" data-name="패스 864761" d="M473.5,563.293l-81,29.141v40.859h81Z" transform="translate(-374.5 -504.971)" opacity="0.56" fill="url(#linear-gradient)"/>
+    <path id="패스_864762" data-name="패스 864762" d="M99.5,128.323h-1V-80.509h1Z" fill="url(#linear-gradient-2)"/>
+    <path id="패스_864760" data-name="패스 864760" d="M392.5,620.616l184.648-59.323" transform="translate(-294.48 -561.293)" fill="none" stroke="#fff" stroke-width="1" stroke-dasharray="3" opacity="0.4"/>
+    <path id="패스_864759" data-name="패스 864759" d="M392.5,571.6l81-28.306" transform="translate(-374.5 -484.277)" fill="none" stroke="#fff" stroke-width="4"/>
+    <circle id="타원_136" data-name="타원 136" cx="4" cy="4" r="4" transform="translate(14 83.323)" fill="#fff"/>
+    <g transform="matrix(1, 0, 0, 1, 0, -80.51)" filter="url(#타원_137)">
+      <g id="타원_137-2" data-name="타원 137" transform="translate(90.86 131.83)" fill="#489cff" stroke="#fff" stroke-width="2">
+        <circle cx="8" cy="8" r="8" stroke="none"/>
+        <circle cx="8" cy="8" r="7" fill="none"/>
+      </g>
+    </g>
+    <rect id="사각형_357137" data-name="사각형 357137" width="332.5" height="1" transform="translate(0 128.323)" fill="#fff" opacity="0.1"/>
+  </g>
+</svg>

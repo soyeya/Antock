@@ -1,0 +1,1761 @@
+#dashboardWrappers{
+
+   width: 100vw;
+   height:100vh;
+   background-color:#0B1017;
+   margin:0 auto;
+   position: relative;
+   overflow: hidden;
+
+  .dashContentWrap{
+      width: 100vw;
+      height: 100vh;
+      margin:0 auto;
+      background: url(/src/media/common/bg02.png);
+      background-position: left top;
+      background-size: cover;
+      background-repeat: no-repeat;
+      -webkit-background-position: left top;
+      -moz-background-position: left top;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -webkit-background-repeat: no-repeat;
+      -moz-background-repeat: no-repeat;
+      position: absolute;
+      overflow-y: auto;
+      
+      &::-webkit-scrollbar{ display: none;}
+      &::-moz-scrollbar{ display: none;}
+
+   section{
+
+            margin:0 auto;
+            padding:42px 40px 61px 310px;
+            width:calc(100% - 310px - 40px);
+            height: calc(100% - 42px - 61px);
+            display: flex;
+            gap:0px 21px;
+
+     article{
+         border-radius: 16px;
+         background: radial-gradient(circle at bottom, rgba(49,87,175,0.5) 0%, rgba(21,32,49,0.5) 100%);
+         -webkit-background: radial-gradient(circle at bottom, rgba(49,87,175,0.5) 0%, rgba(21,32,49,0.5) 100%);
+         -moz-background: radial-gradient(circle at bottom, rgba(49,87,175,0.5) 0%, rgba(21,32,49,0.5) 100%);
+         margin:0 auto;
+         height:100%;
+
+      &.dashSpace01{ width:15%;}
+      &.dashSpace02{ width:50%;}
+      &.dashSpace03{ width:35%;}
+
+      &.dashSpace01{ 
+
+         .resultTopContent{
+
+            padding:18px 16px;
+            border-bottom: 1px solid rgba(51, 70, 101,0.4);
+               a{
+               display: block;
+               display: flex;
+               align-items: center;
+               color:$fontColor-f;
+               font-size: 0.85vw;
+               gap:7px;
+               text-transform: uppercase;
+
+               span{
+
+                  width: 15px;
+                  height: 15px;
+                  background-image: url(/src/media/dashboard/arrowLink.svg);
+                  background-position: left center;
+                  background-repeat: no-repeat;
+                  background-size: contain;
+
+               }
+               }
+         }
+         .resultTopMain{
+               padding:0px 16px 20px;
+
+            ul{
+
+               width: 100%;
+               margin:0 auto;
+
+               &.logoContents{
+
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  
+                  li{
+                     width: 100%;
+                     padding:34px 0px;
+                     display: flex;
+                     align-items: center;
+                     justify-content: center;
+                     img{
+                        height:36px;
+                        object-fit: contain;
+                     }
+                  }
+               }
+
+            &.scoreBoxs{
+
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               gap:0px 7px;
+               padding-bottom:26px;
+
+               li{
+                  width:50%;
+                  h3{
+                     color:#A3A5A9;
+                     font-size: 0.6vw;
+                     font-weight: 500;
+                     padding-bottom: 12.3%;
+                     text-align: center;
+                  }
+
+                  .boxs{
+
+                     border-radius: 8px;
+                     padding:15px 10px;
+                     width:calc(100% - 20px);
+                     height:calc(87px - 30px);
+
+                     &.boxs01{ background-color: #1D62D0;}
+                     &.boxs02{ background-color: #707070}
+
+                     p{
+                        color:$fontColor-f;
+                        font-size: 1.25vw;
+                        font-family: 'Switzer-Medium';
+                        text-align: center;
+                        width: 100%;
+                        padding-bottom:8px;
+
+                     }
+                     span{
+                        display: block;
+                        text-align: center;
+                        font-size: 0.85vw;
+                        color:$fontColor-f;
+                        width: 100%;
+
+                     }
+                  }
+               }
+            }
+
+            &.moreViews{
+               padding-bottom:49px;
+
+               li{
+                  
+                  width: 100%;
+                  padding-bottom:14px;
+
+                  &:last-child{ padding-bottom: 0px;}
+
+                  img{ 
+                     width: 100%;
+                     height:100px;
+                     object-fit: fill;
+                  }
+                  p{
+                     color:#A3A5A9;
+                     font-size: 0.73vw;
+                     line-height: 1.4;
+                     word-break: keep-all;
+                  }
+                  button{
+                     height:31px;
+                     font-size: 0.73vw;
+                     padding:0px 13px;
+                     border-radius: 19px;
+                     background-color: #1D62D0;
+                     color:$fontColor-f;
+                  
+                  }
+               }
+            }
+
+            &.DetailScores{
+
+                h5{
+                  color:$fontColor-f;
+                  font-weight: 500;
+                  font-size: 0.85vw;
+                  padding-bottom:20px;
+                }
+
+                .dataChartBoxs{
+                   width: 100%;
+                   padding-bottom:10%;
+
+             
+                   .canvasBoxs{
+
+                     width: 100%;
+                     height:50px;
+                     display: flex;
+                     flex-direction: column;
+                     align-items: center;
+                     justify-content: center;
+                     overflow: hidden;
+                     position: relative;
+
+                     .titleBoxs{
+
+                        position: absolute;
+                        top:0;
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding-bottom:7px;
+  
+                        h3{
+                          color:$fontColor-f;
+                          font-size: 0.75vw;
+                        }
+                        p{
+                          color:$fontColor-f;
+                          font-size: 0.75vw;
+                          text-transform: capitalize;
+                          span{ padding-right:3px;}
+                        }
+                     }
+
+                      canvas{
+
+                         position: absolute;
+                         top:calc(100% / 3);
+      
+                      }
+
+                   }
+                }
+            }
+            }
+          }
+       }
+       &.dashSpace02{
+
+          
+          position: relative;
+
+          h3{
+            color:$fontColor-f;
+            text-align: center;
+            font-size: 30px;
+            font-weight: 500;
+            padding-top:29px;
+          }
+
+          .data-boxs{
+
+             margin:0 auto;
+             width: 100%;
+             height: 500px;
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             position: absolute;
+             top:15%;
+
+             .button-container {
+               position: absolute; 
+               width: 100%; 
+               height: 100%;
+               border-radius: 50%; 
+               margin: 50px auto;
+               display: flex;
+               justify-content: center; 
+               align-items: center; 
+
+               .radar-button {
+                  position: absolute; 
+                  width: 96px; 
+                  height: 58px; 
+                  border-radius: 8px; 
+                  background-color:transparent;
+                  color: white;
+                  border: none;
+                  font-size: 12px; 
+                  cursor: pointer; 
+                  align-items: center;
+                  text-align: center;
+                  transition: transform 0.3s; 
+                  font-size: 0.7vw;
+                  font-family: 'Switzer-Medium';
+                  z-index:999;
+
+                  p{
+                     color:#A3A5A9;
+                     font-size: 0.85vw;
+                     font-family: 'Switzer-Regular';
+                  }
+
+                  &.active{
+                     background-color: #5DA7FF;
+                     color:#000;
+                     box-shadow: 0 0 16px rgba(93, 167, 255,0.3);
+                     p{
+                        color:rgba(0, 0, 0,0.5);
+                     }
+                  }
+
+                  &:nth-child(1) {
+                     top: 0%;
+                     left: 50%;
+                     transform: translate(-50%, -100%);
+                   }
+
+                   &:nth-child(2) {
+                     top: 17.5%;
+                     left: 82.5%;
+                     transform: translate(-50%, -50%);
+                                      
+                 }
+                 &:nth-child(3) {
+                  top: 55%;
+                  left: 95%;
+                  transform: translate(-100%, -50%);
+                }
+                &:nth-child(4) {
+                  top: 92.5%;
+                  left: 82.5%;
+                  transform: translate(-50%, -50%);
+                }
+                &:nth-child(5) {
+                  top: 100%;
+                  left: 50%;
+                  transform: translate(-50%, 0%);
+                }
+                &:nth-child(6) {
+                  top: 92.5%;
+                  left: 17.5%;
+                  transform: translate(-50%, -50%);
+                }
+                &:nth-child(7) {
+                  top: 55%;
+                  left: 10%;
+                  transform: translate(-50%, -50%);
+                }
+                &:nth-child(8) {
+                  top: 17.5%;
+                  left: 17.5%;
+                  transform: translate(-50%, -50%);
+                }
+                
+               
+             }
+            }
+
+             .dataCanvasBoxs{
+
+               width: 100%;
+               height:calc(100% - 30px);
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               position: absolute;
+
+             }
+          }
+
+          .labelsBoxs{
+
+            position: absolute;
+            right:16px;
+            bottom:25%;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding:12px 14px;
+            background-color: rgba(144, 168, 209, 0.13);
+            
+            .labelLists{
+
+               width: 100%;
+               display: flex;
+               flex-direction: column;
+               gap:10px;
+            
+               
+                li{
+
+                  display: flex;
+                  align-items: center;
+                  gap:0px 12px;
+
+                   i{
+                     width: 8px;
+                     height: 8px;
+                     border-radius: 50%;
+                     display: block;
+
+                     &.blue{background-color: #1B5FF8;}
+                     &.sky{background-color: #71C7FF;}
+                     &.green{background-color: #C3FF6F;}
+                   }
+
+                   p{ color:$fontColor-f;
+                     font-size: 0.7vw;
+                  }
+                }
+
+            }
+          }
+          .growthDriverDatas{
+            
+            margin:0 auto;
+            position: absolute;
+            bottom:0px;
+            border-radius: 6px;
+            padding:20px 25px;
+            width: calc(100% - 50px);
+            height:calc(200px - 40px);
+            background-color: rgba(144, 168, 209, 0.13);
+            display: flex;
+            flex-direction: column;
+            gap:23px;
+
+            h5{
+               color:$fontColor-f;
+               font-size: 20px;
+               text-align: left;
+            }
+
+            .dataBars{
+
+               width: 100%;
+
+               &.bars{
+
+                   display: flex;
+                   align-items: center;
+                   justify-content: center;
+                   height:100%;
+                   width: 100%;
+                   border-radius: 10px;
+                   overflow: hidden;
+                   position: absolute;
+                   bottom:0px;
+
+                   canvas{
+                     display: flex;
+                     align-items: center;
+                     justify-content: center;
+                   }
+               }
+
+               &.lists{
+
+                   position: absolute;
+                   bottom:20px;
+                   width: 100%;
+                   padding:0px 20px;
+                   width: calc(100% - 40px);
+                   display: flex;
+                   flex-wrap:wrap;
+                   align-items: center;
+                   justify-content: flex-start;
+
+                   li{
+
+                     display: flex;
+                     align-items: center;
+                     gap:0px 4px;
+                     width:20%;
+                     float:left;
+                     margin:3px;
+                     
+                     i{
+                        width: 8px;
+                        height: 8px;
+                        border-radius: 50%;
+                        display: inline-block;
+   
+
+                        &.dataBar01{ background-color: #1B5FF8;}
+                        &.dataBar02{ background-color:#27A3FF;}
+                        &.dataBar03{ background-color:#21DDFF;}
+                        &.dataBar04{ background-color: #71FFD3;}
+                        &.dataBar05{ background-color: #2B5D7C;}
+                        &.dataBar06{ background-color: #717CFF;}
+                        &.dataBar07{ background-color: #4856FF;}
+                        &.dataBar08{ background-color: #E5E5E5;}
+
+                     }
+
+                     p{ 
+                        color:$fontColor-f;
+                        font-size: 0.7vw;
+                     }
+                   }
+
+               }
+            }
+
+          }
+       }
+
+       &.dashSpace03{ 
+
+         position: relative;
+
+         .openDataBoxies{
+
+            position: absolute;
+            padding:10px 20px;
+            display: none;
+
+            &.active{ display: block;}
+
+            &.openDataBox01{
+
+               .contentTop{
+
+                  h5{
+                     color:$fontColor-f;
+                     font-size: 1.4vw;
+                     display: flex;
+                     align-items: center;
+                     gap:0px 12px;
+                     margin-bottom: 10px;
+
+                     span{
+
+                        background-color: #489CFF;
+                        border-radius: 6px;
+                        color:#000000;
+                        font-size: 0.85vw;
+                        padding:4px 10px;
+                     }
+                  }
+                  p{
+                     color:#A3A5A9;
+                     word-break: keep-all;
+                     font-size: 0.85vw;
+                     line-height: 1.5;
+                  }
+               }
+
+               .contentMain{
+
+                  width: 100%;
+                  margin:0 auto;
+                  padding-top:40px;
+
+                  .tableBox{
+
+                     width: 100%;
+                     display: flex;
+                     height:670px;
+                     overflow-y: scroll;
+                     &::-webkit-scrollbar{ display: none;}
+                     &::-moz-scrollbar{ display: none;}
+
+
+
+                     table{
+
+                        width: 100%;
+                        border-collapse: separate;
+                        border-spacing: 0; /* 셀 간격을 0으로 설정 */
+      
+                        
+                        thead{
+
+                            tr{
+
+                              th{
+                                 padding:11px 14px;
+                                 color:rgba(255, 255, 255,0.4);
+                                 background-color: rgba(144, 168, 209,0.12);
+                                 text-align: left;
+                                 font-size: 0.85vw;
+                                 
+                              }
+                            }
+                        }
+
+                        tbody{
+                           tr{
+                              td{
+                                 font-size: 0.85vw;
+                                 color:$fontColor-f;
+                                 padding:15px 5px;
+                                 text-align: center;
+                                 border-bottom: 1px solid rgba(112, 112, 112,0.6);
+                           
+                                 &:first-child{ text-align: left;}
+
+                                 p{
+                                    border-radius: 4px;
+                                    padding:3px 7px;
+                                    background-color: rgba(255, 255, 255,0.2);
+                                    color:rgba(255, 255, 255,0.7); 
+                                    width:25%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    margin-bottom:6px;
+                                    font-size: 0.75vw;
+                                 }
+                                 .data{
+                                    float:left;
+
+                                    &.btnData{ 
+                                       font-family: 'Switzer-Medium';
+                                    }
+                                 }
+                              }
+                           }
+                        }
+                     }
+                  }
+
+                  .scoreBoxies{
+
+                     width: 100%;
+                     display: flex;
+                     align-items: center;
+                     justify-content: center;
+                     padding-top:5%;
+
+                     button{
+
+                       
+                        padding:20px 0px;
+                        width: 100%;
+                        background-color: #2C6DFF;
+                        border-radius: 8px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+         
+
+                        ul{
+
+                           padding:0px 10px;
+                           width: calc(100% - 20px);
+                           display: flex;
+                           align-items: center;
+                           justify-content: space-between;
+                           
+                           li{
+
+                              display: flex;
+                              align-items: center;
+
+                              span{
+                                 color:$fontColor-f;
+                                 font-size: 0.95vw;
+                                 font-family: 'Switzer-Medium';
+                              }
+                           }
+                        }
+                     }
+                  }
+
+                  .lineBars{
+
+                      width:130px;
+                      border-radius: 30px;
+                      background-color: rgba(255, 255, 255,0.2);
+                      position: relative;
+                      height: 15px;
+                      overflow: hidden;
+                      float:left;
+                      margin-right:14px;
+                      top:3px;
+
+                      em{
+
+                        position: absolute;
+                        left:0;
+                        background-color: #4073E6;
+                        width: 60%;
+                        height: 100%;
+
+                     }
+
+                     &.btnLineBars{
+                        background-color: rgba(255, 255, 255,0.6);
+                        em{
+                           background-color: #fff;
+                        }
+                     }
+                  }
+               }
+            }
+
+         &.openDataBox02{
+            
+            width: calc(100% - 40px);
+
+            .openDataBoxTop{
+
+               display: flex;
+               align-items: center;
+               padding-top:7%;
+
+               ul{
+
+                  &:nth-child(1){ width:20%;}
+
+                 button{
+
+                  width: 50px;
+                  height: 50px;
+                  background: url(/src/media/dashboard/before.svg);
+                  background-repeat: no-repeat;
+                  background-position: center center;
+                  background-size: 30%;
+
+                 }
+
+                 h5{
+                  color:$fontColor-f;
+                  font-size: 1.4vw;
+                  padding-bottom:10px;
+                  text-align: center;
+
+               }
+                  p{
+
+                     color: #A3A5A9;
+                     font-size: 0.85vw;
+                     text-align: center;
+                     
+                  }
+               }
+            }
+
+            .openDataBoxContent{
+
+               width: 100%;
+               margin:0 auto;
+               padding-top:5.9%;
+
+               .dataLabelboxs{
+
+                  border-radius: 6px;
+                  background-color: #212E46;
+                  width:calc(100% / 1.5);
+                  margin:0 auto;
+
+                  ul{
+
+                     padding:15px 14px;
+                     display: flex;
+                     align-items: center;
+                     justify-content: center;
+                     gap:0px 11px;
+
+                     li{
+                        display: flex;
+                        align-items: center;
+                        gap:0px 6px;
+
+                        i{
+                           width: 8px;
+                           height: 8px;
+                           border-radius: 50%;
+                           display: block;
+      
+                           &.blue{background-color: #1B5FF8;}
+                           &.sky{background-color: #71C7FF;}
+                           &.green{background-color: #C3FF6F;}
+                         }
+                         p{
+                           color:$fontColor-f;
+                           font-size: 0.6vw;
+                         }
+                     }
+                  }
+               }
+
+               .dataInsert{
+                  width: 100%;
+                  margin:0 auto;
+
+
+                    .selectInsert{
+
+                      width: 100%;
+                      padding-top:8%;
+                      display: flex;
+                      align-items: center;
+                      justify-content: flex-end;
+                     
+                     .selectInsertSelectBoxs{
+
+                        width: 181px;
+
+                        .selectInsertSelects{
+                           max-width: 181px;
+                           height: 40px;
+                           border-radius: 6px;
+                           background-color:transparent;
+                           position: relative;
+
+                           .selectInsertSelectsTitleBtn{
+                              width: 100%;
+                              padding: 0px 15px;
+                              height: 100%;
+                              position: absolute;
+                              left: 0;
+                              display: block;
+                              background-image: url(/src/media/dashboard/arrowDown.svg);
+                              background-size: 10px;
+                              background-position: right 14px center;
+                              background-repeat: no-repeat;
+                              font-size: 0.7vw;
+                              font-weight: 400;
+                              border-radius: 6px;
+                              color:#fff;
+                              cursor: pointer;
+                              border:1px solid #334664;
+                              text-align: left;
+
+                              &.active{
+                                 background-color:transparent;
+                              }
+                           }
+                           .selectInsertSelectList{
+                              position: absolute;
+                              top: 46px;
+                              left: 0;
+                              width: 100%;
+                              height:0px;
+                              border-radius: 10px;
+                              border: none;
+                              background-color:transparent;
+                              opacity: 0;
+                              transition: 300ms;
+                              overflow: hidden;
+
+                              &.active{
+                                 opacity: 1;
+                                 height: 100px;
+                                 z-index: 9999;
+                                 transition: height 500ms;
+                                 border:1px solid #334664;
+                                 background-color: transparent;
+                              }
+                              .selectInsertSelectListMember{
+                                 position: absolute;
+                                 top: 0px;
+                                 left: 0;
+                                 width: calc(100% - 2px);
+                                 height: 100%;
+                                 margin: 0 auto;
+                                 background: transparent;
+                                 overflow-x: hidden;
+                                 overflow-y: auto;
+                                 z-index: 9999;
+
+                                 &::-webkit-scrollbar{ display: none;}
+                                 &::-moz-scrollbar{ display: none;}
+
+                                 li{
+                                    width: 100%;
+                                    height:36px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+
+                                    p{
+                                       color: #fff;
+                                       font-size: 0.7vw;
+                                       font-weight: 400;
+                                       padding:0px 15px;
+                                       width: calc(100% - 30px);
+                                       height: 100%;
+                                       display: flex;
+                                       align-items: center;
+                                    }
+                                 }
+                              }
+                           }
+                        }
+                     }
+                      
+                    }
+
+                  .canvasCont{
+
+                     width: 100%;
+                     height:600px;
+                     display: flex;
+                     align-items: center;
+                     justify-content: center;
+
+                     canvas{
+                     
+                        height: 100%;
+                     }
+
+                  }
+
+                  .buttonInsert{
+
+                     width: 100%;
+                     padding-top:10px;
+                     display: flex;
+                     align-items: center;
+                     justify-content: center;
+
+                     button{
+                        background-color: #2C6DFF;
+                        width:calc(100% / 1.5);
+                        height:52px;
+                        border-radius: 43px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        span{
+                           background-image: url(/src/media/dashboard/addInfo.svg);
+                           background-position: center center;
+                           background-size: contain;
+                           background-repeat: no-repeat;
+                           width: 100%;
+                           height:15px;
+                           display: block;
+                        }
+                     }
+                  }
+               }
+
+            }
+         }
+         }
+
+       }
+     }
+
+     @media all and (max-width:1890px){
+      article{
+         &.dashSpace01{
+            .resultTopMain{
+               ul{
+                  &.moreViews{
+                     padding-bottom:20px;
+                     li{
+                        padding-bottom: 5px;
+                        img{height:80px;}
+                        p{ font-size: 0.6vw;}
+                     }
+                  }
+                  &.scoreBoxs{
+                     li{
+                        .boxs{
+                           padding:10px;
+                           width:calc(100% - 20px);
+                           height:calc(57px - 20px);
+                           p {
+                              font-size: 1vw;
+                              padding-bottom: 2px;
+                        }
+                        span{ font-size: 0.6vw;}
+                        }
+                     }
+                  }
+                  &.DetailScores{
+                     h5{ font-size: 0.6vw; padding-bottom: 10px;}
+                     .dataChartBoxs{
+                        .canvasBoxs{
+                           height:40px;
+                           .titleBoxs{
+                              h3{ font-size: 0.6vw;}
+                              p{font-size: 0.6vw;}
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+         }
+         &.dashSpace02{
+            .data-boxs{ 
+               height:300px;
+               top:20%;
+            }
+           .growthDriverDatas{
+            height:calc(170px - 40px);
+           }
+         }
+
+         &.dashSpace03{
+            .openDataBoxies{
+               &.openDataBox01{
+                  .contentMain{
+                     .tableBox{ height:470px;}
+                  }
+               }
+
+               &.openDataBox02{
+                  .openDataBoxContent {
+                     .dataInsert{
+                        .canvasCont{ height:350px;}
+                     }
+                  }
+               }
+            }
+         }
+      }
+     }
+
+
+     @include breakpoint(x-large){
+      article{
+         &.dashSpace01{
+            .resultTopMain{
+               ul{
+                  &.logoContents{
+                     li{ padding:15px 0px;
+                     
+                        img{height:26px;}
+                     }
+                  }
+                  &.moreViews{
+                     padding-bottom:20px;
+                     li{
+                        padding-bottom: 5px;
+                        img{height:50px;}
+                        p{ font-size: 0.6vw;}
+                        button {
+                           height: 21px;
+                           font-size: 0.5vw;
+                       }
+                     }
+                  }
+                  &.scoreBoxs{
+                     padding-bottom: 10px;
+                     li{
+                        .boxs{
+                           padding:5px;
+                           width:calc(100% - 10px);
+                           height:calc(37px - 10px);
+                           p {
+                              font-size: 0.7vw;
+                              padding-bottom: 2px;
+                        }
+                        span{ font-size: 0.4vw;}
+                        }
+                     }
+                  }
+                  &.DetailScores{
+                     h5{ font-size: 0.6vw; padding-bottom: 10px;}
+                     .dataChartBoxs{
+                        .canvasBoxs{
+                           height:35px;
+                           .titleBoxs{
+                              h3{ font-size: 0.5vw;}
+                              p{font-size: 0.5vw;}
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+         }
+         &.dashSpace02{
+            h3{ font-size: 1.3vw;}
+            .data-boxs{ 
+               height:250px;
+               top:20%;
+               .button-container {
+                  .radar-button { 
+                     width: 70px;
+                     height:30px;
+                     font-size: 0.6vw;
+                     p{
+                        font-size: 0.5vw;
+                     }
+                  }
+               }
+            }
+           .growthDriverDatas{
+            height:calc(140px - 40px);
+            h5{
+               font-size: 0.9vw;
+            }
+            .dataBars {
+               &.lists{
+                  li{
+                     i{ width: 3px; height: 3px;}
+                     p{
+                        font-size: 0.5vw;
+                     }
+                  }
+               }
+            }
+           }
+           .labelsBoxs{
+            padding:5px;
+            .labelLists{
+               li{
+                  i{ width: 3px; height: 3px;}
+                  p{ font-size: 0.5vw;}
+               }
+            }
+           }
+         }
+
+         &.dashSpace03{
+            .openDataBoxies{
+               &.openDataBox01{
+                  .contentTop{
+                     h5{
+                        font-size: 1vw;
+                        margin-bottom: 5px;
+                        span{
+                           font-size: 0.5vw;
+                        }
+                     }
+                     p{ font-size: 0.6vw;}
+                  }
+                  .contentMain{
+                     padding-top: 20px;
+                     .tableBox{ height:400px;
+                        table{
+                           thead{
+                              tr{
+                                 th{
+                                    font-size: 0.6vw;
+                                    padding:5px 10px;
+                                 }
+                              }
+                           }
+                           tbody{
+                              tr{
+                                 td{
+                                    font-size:0.6vw;
+                                    padding:8px 5px;
+                                    p{
+                                       font-size: 0.5vw;
+                                       margin-bottom: 3px;
+                                       width: 20%;
+                                    }
+                                 }
+                              }
+                           }
+                        }
+                     }
+
+                     .lineBars{
+                        width: 80px;
+                        height:10px;
+                        margin-right: 3px;
+                        top:1px;
+                     }
+
+                     .scoreBoxies{
+                        button{
+                           padding:10px 0px;
+                           ul{
+                              li{
+                                 span{font-size: 0.6vw;}
+                              }
+                           }
+                        }
+                     }
+                  }
+               }
+
+               &.openDataBox02{
+                  .openDataBoxTop {
+                     ul{
+
+                        &:nth-child(1){
+                           width:30%;
+                        }
+                        h5{ font-size: 1vw;
+                           padding-bottom: 5px;
+                        }
+                        button{ 
+                           width: 30px;
+                           height: 30px;
+                        }
+                        p{ font-size: 0.5vw;}
+                     }
+                  }
+                  .openDataBoxContent {
+                     .dataInsert{
+                        .canvasCont{ height:300px;}
+                        .selectInsert{
+                           .selectInsertSelectBoxs{
+                              width: 100px;
+                              .selectInsertSelects{
+                                 max-width:100px;
+                                 height:30px;
+                                 .selectInsertSelectsTitleBtn {
+                                    background-size: 5px;
+                                    font-size: 0.5vw;
+                                 }
+                                 .selectInsertSelectList{
+                                    top:36px;
+                                    .selectInsertSelectListMember{
+                                       li{
+                                          height:30px;
+                                          p{
+                                             font-size: 0.5vw;
+                                             padding:0px 10px;
+                                             width: calc(100% - 20px);
+                                          }
+                                       }
+                                    }
+                                 }
+                              }
+                           }
+                        }
+                        .buttonInsert{
+                           button{
+                              height:30px;
+                              span{
+                                 height:10px;
+                              }
+                           }
+                        }
+                     }
+                     .dataLabelboxs{
+                        width: calc(100% / 1.7);
+                        ul{
+                           padding:5px;
+                           li{
+                              i{ width: 3px; height: 3px;}
+                              p{ font-size: 0.5vw;}
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+         }
+      }
+     }
+
+   }
+
+   @include breakpoint(large){
+      section{
+         margin:0 auto;
+         padding:42px 40px 61px 230px;
+         width:calc(100% - 230px - 40px);
+         height: calc(100% - 42px - 61px);
+         display: flex;
+         gap:0px 21px;
+
+         article{
+            &.dashSpace01{
+               .resultTopMain{
+                  ul{
+                     &.logoContents{
+                        li{ padding:15px 0px;
+                        
+                           img{height:15px;}
+                        }
+                     }
+                     &.moreViews{
+                        padding-bottom:10px;
+                        li{
+                           padding-bottom: 5px;
+                           img{
+                               height:30px;
+                               object-fit: contain;
+                           }
+                           p{ font-size: 0.5vw;}
+                           button {
+                              height: 18px;
+                              font-size: 0.5vw;
+                          }
+                        }
+                     }
+                     &.scoreBoxs{
+                        padding-bottom: 10px;
+                        li{
+                           .boxs{
+                              padding:5px;
+                              width:calc(100% - 10px);
+                              height:calc(27px - 10px);
+                              p {
+                                 font-size: 0.6vw;
+                                 padding-bottom: 1px;
+                           }
+                           span{ font-size: 0.4vw;}
+                           }
+                        }
+                     }
+                     &.DetailScores{
+                        h5{ font-size: 0.6vw; padding-bottom: 10px;}
+                        .dataChartBoxs{
+                           .canvasBoxs{
+                              height:30px;
+                              .titleBoxs{
+                                 h3{ font-size: 0.5vw;}
+                                 p{font-size: 0.5vw;}
+                              }
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+            &.dashSpace02{
+               h3{ font-size: 1.3vw;}
+               .data-boxs{ 
+                  height:180px;
+                  top:20%;
+                  .button-container {
+                     .radar-button { 
+                        width: 70px;
+                        height:30px;
+                        font-size: 0.6vw;
+                        p{
+                           font-size: 0.5vw;
+                        }
+                     }
+                  }
+               }
+              .growthDriverDatas{
+               height:calc(100px - 40px);
+               h5{
+                  font-size: 0.9vw;
+               }
+               .dataBars {
+                  &.lists{
+                     bottom:10px;
+                     li{
+                        i{ width: 3px; height: 3px;}
+                        p{
+                           font-size: 0.5vw;
+                        }
+                     }
+                  }
+               }
+              }
+              .labelsBoxs{
+               padding:5px;
+               .labelLists{
+                  li{
+                     i{ width: 3px; height: 3px;}
+                     p{ font-size: 0.5vw;}
+                  }
+               }
+              }
+            }
+   
+            &.dashSpace03{
+               .openDataBoxies{
+                  &.openDataBox01{
+                     .contentTop{
+                        h5{
+                           font-size: 1vw;
+                           margin-bottom: 5px;
+                           span{
+                              font-size: 0.5vw;
+                           }
+                        }
+                        p{ font-size: 0.6vw;}
+                     }
+                     .contentMain{
+                        padding-top: 20px;
+                        .tableBox{ height:300px;
+                           table{
+                              thead{
+                                 tr{
+                                    th{
+                                       font-size: 0.6vw;
+                                       padding:5px 10px;
+                                    }
+                                 }
+                              }
+                              tbody{
+                                 tr{
+                                    td{
+                                       font-size:0.6vw;
+                                       padding:8px 5px;
+                                       p{
+                                          font-size: 0.5vw;
+                                          margin-bottom: 3px;
+                                          width: 20%;
+                                       }
+                                    }
+                                 }
+                              }
+                           }
+                        }
+   
+                        .lineBars{
+                           width: 80px;
+                           height:10px;
+                           margin-right: 3px;
+                           top:1px;
+                        }
+   
+                        .scoreBoxies{
+                           button{
+                              padding:10px 0px;
+                              ul{
+                                 li{
+                                    span{font-size: 0.6vw;}
+                                 }
+                              }
+                           }
+                        }
+                     }
+                  }
+   
+                  &.openDataBox02{
+                     .openDataBoxTop {
+                        ul{
+   
+                           &:nth-child(1){
+                              width:30%;
+                           }
+                           h5{ font-size: 1vw;
+                              padding-bottom: 5px;
+                           }
+                           button{ 
+                              width: 30px;
+                              height: 30px;
+                           }
+                           p{ font-size: 0.5vw;}
+                        }
+                     }
+                     .openDataBoxContent {
+                        .dataInsert{
+                           .canvasCont{ height:250px;}
+                           .selectInsert{
+                              .selectInsertSelectBoxs{
+                                 width: 100px;
+                                 .selectInsertSelects{
+                                    max-width:100px;
+                                    height:20px;
+                                    .selectInsertSelectsTitleBtn {
+                                       background-size: 5px;
+                                       font-size: 0.5vw;
+                                    }
+                                    .selectInsertSelectList{
+                                       top:26px;
+                                       .selectInsertSelectListMember{
+                                          li{
+                                             height:20px;
+                                             p{
+                                                font-size: 0.5vw;
+                                                padding:0px 10px;
+                                                width: calc(100% - 20px);
+                                             }
+                                          }
+                                       }
+                                    }
+                                 }
+                              }
+                           }
+                           .buttonInsert{
+                              button{
+                                 height:30px;
+                                 span{
+                                    height:10px;
+                                 }
+                              }
+                           }
+                        }
+                        .dataLabelboxs{
+                           width: calc(100% / 1.7);
+                           ul{
+                              padding:5px;
+                              li{
+                                 i{ width: 3px; height: 3px;}
+                                 p{ font-size: 0.5vw;}
+                              }
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+   @include breakpoint(medium){
+      section{
+         margin:0 auto;
+         padding:42px 20px 31px 190px;
+         width:calc(100% - 190px - 20px);
+         height: calc(100% - 42px - 31px);
+         display: flex;
+         gap:0px 21px;
+
+         article{
+            border-radius: 10px;
+            &.dashSpace01{
+               .resultTopContent{ padding:10px;
+                  a{
+                     span{
+                        width: 8px;
+                        height: 8px;
+                     }
+                  }
+               }
+               .resultTopMain{
+                  ul{
+                     &.logoContents{
+                        li{ padding:15px 0px;
+                        
+                           img{height:15px;}
+                        }
+                     }
+                     &.moreViews{
+                        padding-bottom:10px;
+                        li{
+                           padding-bottom: 3px;
+                           img{
+                               height:30px;
+                               object-fit: contain;
+                           }
+                           p{ font-size: 0.5vw;}
+                           button {
+                              height: 15px;
+                              font-size: 0.5vw;
+                          }
+                        }
+                     }
+                     &.scoreBoxs{
+                        padding-bottom: 10px;
+                        li{
+                           .boxs{
+                              padding:3px;
+                              width:calc(100% - 3px);
+                              height:calc(17px - 3px);
+                              border-radius: 3px;
+                              p {
+                                 font-size: 0.6vw;
+                                 padding-bottom: 1px;
+                           }
+                           span{ font-size: 0.4vw;}
+                           }
+                        }
+                     }
+                     &.DetailScores{
+                        h5{ font-size: 0.6vw; padding-bottom: 10px;}
+                        .dataChartBoxs{
+                           height:100px;
+                           overflow-y: scroll;
+                           &::-webkit-scrollbar{ display: none;}
+                           &::-moz-scrollbar{ display: none;}
+                           
+                           .canvasBoxs{
+                              height:50px;
+                              .titleBoxs{
+                                 h3{ font-size: 0.5vw;}
+                                 p{font-size: 0.5vw;}
+                              }
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+            &.dashSpace02{
+               h3{ font-size: 1.3vw;
+                  padding-top:10px;
+               }
+               .data-boxs{ 
+                  height:150px;
+                  top:15%;
+                  .button-container {
+                     .radar-button { 
+                        width: 50px;
+                        height:20px;
+                        font-size: 0.6vw;
+                        border-radius: 3px;
+                        p{
+                           font-size: 0.5vw;
+                        }
+                     }
+                  }
+               }
+              .growthDriverDatas{
+
+               width: calc(100% - 20px);
+               height:calc(80px - 20px);
+               padding:10px;
+
+               h5{
+                  font-size: 0.9vw;
+               }
+               .dataBars {
+                  &.lists{
+                     bottom:10px;
+                     li{
+                        i{ width: 3px; height: 3px;}
+                        p{
+                           font-size: 0.5vw;
+                        }
+                     }
+                  }
+               }
+              }
+              .labelsBoxs{
+               padding:5px;
+               bottom: 30%;
+               border-radius: 3px;
+               .labelLists{
+                  gap:5px;
+                  li{
+                     gap:0px 5px;
+                     i{ width: 3px; height: 3px;}
+                     p{ font-size: 0.5vw;}
+                  }
+               }
+              }
+            }
+   
+            &.dashSpace03{
+               .openDataBoxies{
+                  &.openDataBox01{
+                     .contentTop{
+                        h5{
+                           font-size: 1vw;
+                           margin-bottom: 5px;
+                           span{
+                              font-size: 0.5vw;
+                           }
+                        }
+                        p{ font-size: 0.6vw;}
+                     }
+                     .contentMain{
+                        padding-top: 10px;
+                        .tableBox{ height:250px;
+                           table{
+                              thead{
+                                 tr{
+                                    th{
+                                       font-size: 0.6vw;
+                                       padding:5px 10px;
+                                    }
+                                 }
+                              }
+                              tbody{
+                                 tr{
+                                    td{
+                                       font-size:0.6vw;
+                                       padding:5px;
+                                       p{
+                                          font-size: 0.5vw;
+                                          margin-bottom: 3px;
+                                          width: 15%;
+                                       }
+                                    }
+                                 }
+                              }
+                           }
+                        }
+   
+                        .lineBars{
+                           width: 50px;
+                           height:5px;
+                           margin-right: 3px;
+                           top:0px;
+                        }
+   
+                        .scoreBoxies{
+                           button{
+                              padding:5px 0px;
+                              border-radius: 3px;
+                              ul{
+                                 li{
+                                    span{font-size: 0.6vw;}
+                                 }
+                              }
+                           }
+                        }
+                     }
+                  }
+   
+                  &.openDataBox02{
+                     .openDataBoxTop {
+                        ul{
+   
+                           &:nth-child(1){
+                              width:30%;
+                           }
+                           h5{ font-size: 1vw;
+                              padding-bottom: 5px;
+                           }
+                           button{ 
+                              width: 20px;
+                              height: 20px;
+                           }
+                           p{ font-size: 0.5vw;}
+                        }
+                     }
+                     .openDataBoxContent {
+                        .dataInsert{
+                           .canvasCont{ height:150px;}
+                           .selectInsert{
+                              .selectInsertSelectBoxs{
+                                 width: 100px;
+                                 .selectInsertSelects{
+                                    max-width:100px;
+                                    height:20px;
+                                    .selectInsertSelectsTitleBtn {
+                                       background-size: 5px;
+                                       font-size: 0.5vw;
+                                    }
+                                    .selectInsertSelectList{
+                                       top:26px;
+                                       .selectInsertSelectListMember{
+                                          li{
+                                             height:20px;
+                                             p{
+                                                font-size: 0.5vw;
+                                                padding:0px 10px;
+                                                width: calc(100% - 20px);
+                                             }
+                                          }
+                                       }
+                                    }
+                                 }
+                              }
+                           }
+                           .buttonInsert{
+                              button{
+                                 height:25px;
+                                 span{
+                                    height:5px;
+                                 }
+                              }
+                           }
+                        }
+                        .dataLabelboxs{
+                           width: calc(100% / 1.7);
+                           ul{
+                              padding:5px;
+                              li{
+                                 i{ width: 3px; height: 3px;}
+                                 p{ font-size: 0.5vw;}
+                              }
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+ }
+}

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="84" height="24" viewBox="0 0 84 24">
+  <g id="그룹_25775" data-name="그룹 25775" transform="translate(-363.003 -1005)">
+    <text id="Prev" transform="translate(446.003 1025)" fill="#fff" font-size="20" font-family="HelveticaNeue-Bold, Helvetica Neue" font-weight="700"><tspan x="-53.34" y="0">PREV</tspan></text>
+    <path id="합치기_3" data-name="합치기 3" d="M0,9A9,9,0,1,0,9,0,9,9,0,0,0,0,9ZM.783,9A8.217,8.217,0,1,1,9,17.217,8.228,8.228,0,0,1,.783,9Zm6-3.23L10.344,9,6.784,12.232l.524.577L11.509,9l-.322-.291L7.309,5.188Z" transform="translate(381.003 1027) rotate(180)" fill="#fff"/>
+  </g>
+</svg>

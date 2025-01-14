@@ -1,0 +1,695 @@
+
+.loadingPageWrap{
+
+    position: fixed;
+    left:0px;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    background: url(/src/media/common/bg02.png);
+    background-position: left top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-background-position: left top;
+    -moz-background-position: left top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-repeat: no-repeat;
+    -moz-background-repeat: no-repeat;
+
+    &.active{
+        display: none;
+    }
+    
+
+    .loadingPageContent{
+
+        margin:0 auto;
+        padding:161px 0px 161px 371px;
+        background-color: transparent;
+        width:calc(100% - 260px - 111px);
+        overflow: hidden;
+
+        .loadingPage{
+
+            width: 100%;
+            height: 100%;
+            margin:0 auto;
+            display: flex;
+
+            .leftContent{
+                width:30%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin-right:5%;
+
+              .texts{
+
+                position: relative;
+
+                ul{
+
+                    position: absolute;
+                    opacity: 0;
+
+                    &.active{ opacity: 1; transition: opacity 800ms;}
+
+                 li{
+                    h3{
+                        color:$fontColor-f;
+                        font-size: 3.2vw;
+                        padding-bottom:31px;
+                        font-family: 'Switzer-Light';
+
+                    }
+                    p{
+                        font-size: 0.98vw;
+                        color:rgba(255, 255, 255, 0.5);
+                        word-break: keep-all;
+                        line-height: 1.5;
+                        font-family: "Pretendard";
+                        font-weight: 500;
+
+                    }
+                 }
+                }
+              }
+            
+        .loadingPercentCont{
+
+            .loading-bar {
+                width: 100%; /* 막대기의 기본 너비 */
+                height: 10px;
+                background-color:#4f5f74; /* 막대기의 색상 */
+                position: relative;
+                border-radius: 5px;
+
+                em{
+                    width: 0px;
+                    height: 100%;
+                    background-color: #fff;
+                    position: absolute;
+                    left:0px;
+                    border-radius: 5px;
+
+                    &.active{
+                        background: linear-gradient(90deg, rgba(154,200,255,1) 0%, rgba(10,121,255,1) 100%);
+                        width:100%;
+                        transition: width 12s;
+                    }
+                }
+
+                span{
+                    font-size: 0.8vw;
+                    color:$fontColor-f;
+                    position: absolute;
+                    top:-30px;
+                    display: block;
+                    font-family: "Pretendard";
+
+                    &.start{ left:0px;}
+                    &.end{ right:0px;
+                        &.active{ color:#117DFF};
+                    }
+                }
+
+                }
+        }
+            
+            }
+
+            .rightContent{
+              
+                width:calc(100% - 400px);
+                height:758px;
+                position: relative;
+                right:0px;
+                background-image: radial-gradient(circle at center 180%, rgba(49, 87, 175, 0.4) 0%, rgba(21, 32, 49, 0.4) 100%);
+                -webkit-background-image: radial-gradient(circle at center 180%, rgba(49, 87, 175, 0.4) 0%, rgba(21, 32, 49, 0.4) 100%);
+                -moz-background-image: radial-gradient(circle at center 180%, rgba(49, 87, 175, 0.4) 0%, rgba(21, 32, 49, 0.4) 100%);
+                backdrop-filter: blur(30px);
+                -webkit-backdrop-filter: blur(30px);
+                -moz-backdrop-filter: blur(30px);
+                border-radius: 16px;
+
+
+             .rightStep{
+
+                padding:51px 48px 44px 88px;
+                width: calc(100% - 88px - 48px);
+                margin:0 auto;
+                position: absolute;
+                height: calc(100% - 51px - 44px);
+                display: none;
+
+                &.active{ display: block;}
+
+                &.rightSlide04{
+                    h5{ padding-bottom: 7.6%;}
+                }
+
+                &.commonSlide{
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        bottom:0px;
+                        left:0px;
+                        width: 100%;
+                        height: calc(100% / 4);
+                        border-bottom-right-radius: 16px;
+                        border-bottom-left-radius: 16px;
+                        background: linear-gradient(180deg, rgba(2,10,21,0) 0%, rgba(30,61,105,1) 100%);
+                        -webkit-background: linear-gradient(180deg, rgba(2,10,21,0) 0%, rgba(30,61,105,1) 100%);
+                        -moz-background: linear-gradient(180deg, rgba(2,10,21,0) 0%, rgba(30,61,105,1) 100%);
+
+                      }
+
+                      &::after{
+                        content: "";
+                        position: absolute;
+                        bottom:0px;
+                        left:0px;
+                        width: 100%;
+                        height: calc(100% / 4);
+                        background-image: url(/src/media/loading/scroll.svg);
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                        background-size: 10%;
+                      }
+
+                }
+
+                h5{
+
+                    color:$fontColor-f;
+                    font-size: 1.85vw;
+                    text-align: center;
+                    font-family: 'Switzer-Light';
+                    padding-bottom:3.3%;
+                }
+
+              .rightDatas{
+ 
+                 width: 100%;
+                 margin:0 auto;
+
+                 table{
+
+                    width: 100%;
+                    border-collapse: separate;
+                    border-spacing: 0; /* 셀 간격을 0으로 설정 */
+
+                    thead{
+                    
+                        tr{
+                         th{
+                            background-color: rgba(144, 168, 209,0.1);
+                            font-size: 0.6vw;
+                            color:rgba(255, 255, 255,0.6);
+                            font-family: 'Switzer-Light';
+                            text-align: center;
+                            line-height: 1.1;
+                         }
+                        }
+
+                    
+                    }
+
+                    tbody{
+                        tr{
+                           
+                            td{
+                                background-color: rgba(144, 168, 209,0.1);
+                                color:rgba(255, 255, 255,0.4);
+                                text-align: center;
+                                font-size: 0.75vw;
+                                word-break: keep-all;
+                                line-height: 1.2;
+                               
+                            }
+                        }
+                     }
+                 }
+                 &.rightDatas01{
+                    table{
+                       thead{
+                        tr{
+                            th{
+                                padding:0px 25px;
+                                height:54px;
+                                border-right: 1px solid rgba(216, 231, 255,0.2);
+                                &:first-child{
+                                    text-align: left;
+                                 }
+
+                            &:last-child{
+                                border-right:none;
+                            }
+                            }
+                        }
+                       }
+                       tbody{
+                        tr{
+                            td{
+                                padding: 15px 14px 15px 20px;
+                                border-top:8px solid #162034;
+                                &:first-child{
+                                    color:$fontColor-f;
+                                    text-align: left;
+                                    
+                                }
+                                &:last-child{
+                                    border-right:none;
+                                }
+                                span{
+
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    float:left;
+                                    word-break: keep-all;
+                        
+                                    img{
+                                        height: 35px;
+                                        object-fit: contain;
+                                        display: block;
+                                        float:left;
+                                        margin-right:12px;
+                                    }
+                                    }
+                            }
+                        }
+                       }
+                    }
+                 }
+
+                &.commonDatas{
+
+                    overflow: hidden;
+
+                    .scrollWrapprs{
+
+                        width: 100%;
+                        max-height:600px;
+                        overflow-y: auto;
+
+                        &::-webkit-scrollbar{ display: none;}
+                        &::-moz-scrollbar{ display: none;}
+                       
+    
+
+                     table{
+                        thead{
+                            tr{
+                              th{
+                                padding:0px 20px;
+                                height:42px;
+                                text-align: left;
+                            
+                              }
+                              &.addBorder{
+                                th{
+                                    border-bottom:15px solid #162034;
+                                }
+                             }
+                            }
+                        }
+                        tbody{
+                            tr{
+
+                                &.nonBorder{
+                                    td{
+                                        border-top:none;
+                                    }
+                                }
+                             td{
+                                padding: 0px 18px;
+                                height:50px;
+                                text-align: left;
+                                border-top:4px solid #162034;
+                                border-right: 1px solid rgba(216, 231, 255, 0.1);
+                                color:$fontColor-f;
+
+                                &:last-child{
+                                    border-right:none;
+                                }
+                                i{
+                                    width: 12px;
+                                    height: 12px;
+                                    background: url(/src/media/loading/loadingChecked.svg);
+                                    background-position: center center;
+                                    background-repeat: no-repeat;
+                                    background-size: contain;
+                                    display:inline-block;
+                                    margin:0 auto;
+                                    margin-right:2%;
+                                    
+                                }
+                                p{
+                                    background-color: #137EFF;
+                                    border-radius: 4px;
+                                    padding:7px 0px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                }
+                             }
+
+                            }
+                        }
+                     }
+                    }
+                  }
+
+                  &.rightDatas04{
+                     .finalist{
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        flex-wrap:wrap;
+                        gap:20px;
+
+                        li{
+                            width:calc(100% / 6 - 20px);
+                            height:90px;
+                            border-radius: 16px;
+                            overflow: hidden;
+                            
+                            img{
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+
+                            }
+                        }
+                     }
+                  }
+                 
+              }
+
+           
+             }
+            }
+        }
+
+    }
+
+    @media all and (max-width:1850px){
+
+    .loadingPageContent{
+
+        margin:0 auto;
+        padding:110px 0px 110px 371px;
+        width:calc(100% - 260px - 111px);
+
+        .loadingPage{
+            .rightContent{ height:550px;
+                .rightStep{
+                    padding: 30px 48px 34px 88px;
+                    width: calc(100% - 88px - 48px);
+                    height: calc(100% - 30px - 34px);
+                    .rightDatas{
+                        table{
+                            thead{
+                                tr{
+                                    th{ font-size: 0.5vw;}
+                                }
+                            }
+                            tbody{
+                                tr{
+                                    td{ font-size: 0.65vw;}
+                                }
+                            }
+                        }
+                     &.rightDatas01{
+                        table{
+                            thead{
+                                tr{
+                                    th{ height:30px;
+                                        padding:10px 25px;
+                                    }
+                                }
+                            }
+                            tbody{
+                                tr{
+                                    td{ padding:10px;}
+                                }
+                            }
+                        }
+                     }
+                     &.commonDatas{
+                        .scrollWrapprs{
+                            max-height:400px;
+                        }
+                     }
+
+                     &.rightDatas04 {
+                        .finalist{
+                            li{ height:60px;}
+                        }
+                     }
+                    }
+                }
+            
+            }
+        }
+      }
+    }
+
+
+@include breakpoint(x-large){
+        .loadingPageContent{
+
+            margin:0 auto;
+            padding:110px 0px 110px 371px;
+            width:calc(100% - 260px - 111px);
+    
+            .loadingPage{
+                .rightContent{
+                    .rightStep{
+                    
+                        .rightDatas{
+                         &.rightDatas01{
+                            table{
+                                tbody{
+                                    tr{
+                                        td{ padding:8px;}
+                                    }
+                                }
+                            }
+                         }
+                        }
+                    }
+                
+                }
+            }
+          }
+    }
+
+    @media all and (max-width:1510px){
+        .loadingPageContent{
+
+            .loadingPage{
+                .rightContent{ 
+                    .rightStep{
+                        padding: 20px;
+                        width: calc(100% - 40px);
+                        height: calc(100% - 40px);
+                        .rightDatas{
+                            table{
+                                tbody{
+                                    tr{
+                                        td{ font-size: 0.6vw;}
+                                    }
+                                }
+                            }
+                        }
+                    }
+                
+                }
+            }
+          }
+
+    }
+
+    @include breakpoint(large){
+        .loadingPageContent{
+            padding: 110px 0px 110px 280px;
+            width: calc(100% - 200px - 80px);
+    
+            .loadingPage{
+                .rightContent{
+                    height:450px;
+                    .rightStep{
+
+                        &.rightSlide04 {
+                            h5{
+                                padding-bottom: 5%;
+                            }
+                        }
+                        .rightDatas{
+                         &.rightDatas01{
+                            table{
+                                thead{
+                                    tr{
+                                        th{ height:20px;
+                                            padding:5px;
+                                        }
+                                    }
+                                }
+                                tbody{
+                                    tr{
+                                        td{ padding:8px;
+                                            border-top: 5px solid #162034;
+                                        }
+                                    }
+                                }
+                            }
+                         }
+                         &.commonDatas {
+                            .scrollWrapprs{
+                                max-height:320px;
+                                table {
+                                    thead{
+                                        tr{
+                                            &.addBorder{
+                                                th{ border-bottom: 8px solid #162034;}
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                         }
+
+                         &.rightDatas04{
+                            .finalist{
+                               width: 100%;
+                               display: flex;
+                               align-items: center;
+                               flex-wrap:wrap;
+                               gap:10px;
+
+                               li{
+                                width:calc(100% / 6 - 10px);
+                               }
+
+                            }
+                        }
+
+
+
+                        }
+                    }
+                
+                }
+            }
+          }
+    }
+
+    @include breakpoint(medium){
+        .loadingPageContent{
+            padding: 50px 0px 50px 230px;
+            width: calc(100% - 180px - 50px);
+    
+            .loadingPage{
+                .leftContent{
+                    .loadingPercentCont{
+                        .loading-bar{
+                            span{ top:-15px}
+                        }
+                    }
+                }
+                .rightContent{
+
+                    width: calc(100% - 200px);
+                    height:250px;
+                    .rightStep{
+
+                        &.rightSlide04 {
+                            h5{
+                                padding-bottom: 5%;
+                            }
+                        }
+                        .rightDatas{
+                         &.rightDatas01{
+                            table{
+                                thead{
+                                    tr{
+                                        th{ height:20px;
+                                            padding:5px;
+                                        }
+                                    }
+                                }
+                                tbody{
+                                    tr{
+                                        td{ padding:5px;
+                                            font-size: 0.6vw;
+                                            border-top: 3px solid #162034;
+                                            span{
+                                                img{height:15px;}
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                         }
+                         &.commonDatas {
+                            .scrollWrapprs{
+                                max-height:170px;
+                                table {
+                                    thead{
+                                        tr{
+                                            &.addBorder{
+                                                th{ border-bottom: 5px solid #162034;
+                                                    height:20px;
+                                                    font-size: 0.6vw;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    tbody{
+                                        tr{
+                                         td{ height:30px;
+                                            font-size: 0.8vw;
+                                            i{ width: 5px;
+                                                height:5px;
+                                            }
+                                            p{ padding:4px 0px;}
+                                        }
+                                        }
+                                    }
+                                }
+                            }
+                         }
+
+                         &.rightDatas04{
+                            .finalist{
+                               width: 100%;
+                               display: flex;
+                               align-items: center;
+                               flex-wrap:wrap;
+                               gap:3px;
+                              
+
+                               li{
+                                width:calc(100% / 6 - 3px);
+                                height:30px;
+                                border-radius: 5px;
+                               }
+
+                            }
+                        }
+
+
+
+                        }
+                    }
+                
+                }
+            }
+          }
+    }
+
+   
+}

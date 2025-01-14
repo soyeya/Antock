@@ -1,0 +1,32 @@
+//font
+
+$fontColor-f : #fff;
+$fontColor-d0d1 : #D0D1D1;
+
+
+$fontWeight-300 : 300;
+$fontWeight-400 : 400;
+$fontWeight-500 : 500;
+$fontWeight-600 : 600;
+$fontWeight-700 : 700;
+$fontWeight-800 : 800;
+$fontWeight-900 : 900;
+
+
+
+//반응형
+
+@mixin breakpoint($size) {
+    @if $size == small {
+      @media (max-width: 768px) { @content; }
+    } @else if $size ==  medium{
+      @media (max-width: 1024px) { @content; }
+    } @else if $size ==  large{
+       @media (max-width: 1390px) { @content; }
+     }@else if $size ==  x-large{
+       @media (max-width: 1650px) { @content; }
+     }@else if $size ==  xxxlarge{
+        @media (min-width:1921px) { @content; }
+      }
+  }
+ 
